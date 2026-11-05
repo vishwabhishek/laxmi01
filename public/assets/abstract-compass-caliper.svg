@@ -1,0 +1,11 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Pivot Hinge Top -->
+  <circle cx="256" cy="80" r="44" fill="#3E3128"/>
+  <circle cx="256" cy="80" r="18" fill="white"/>
+  <!-- Left Leg with Bevel -->
+  <path d="M240 108L92 432C86 445 96 460 110 460H142C150 460 158 454 162 446L266 180L240 108Z" fill="#3E3128"/>
+  <!-- Right Leg with Bevel -->
+  <path d="M272 108L420 432C426 445 416 460 402 460H370C362 460 354 454 350 446L246 180L272 108Z" fill="#3E3128"/>
+  <!-- Measurement Dial Arc -->
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M168 310C194.27 289.44 227.69 276 256 276C284.31 276 317.73 289.44 344 310L358 290C327.91 266.49 289.71 250 256 250C222.29 250 184.09 266.49 154 290L168 310Z" fill="#3E3128"/>
+</svg>

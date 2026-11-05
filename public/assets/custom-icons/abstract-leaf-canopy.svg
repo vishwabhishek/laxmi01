@@ -1,0 +1,8 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left Sprout Leaf -->
+  <path d="M256 460C256 460 140 430 84 330C28 230 64 120 120 72C176 24 244 60 256 120C256 220 256 460 256 460Z" fill="#3E3128"/>
+  <!-- Right Balance Leaf -->
+  <path d="M256 460C256 460 372 430 428 330C484 230 448 120 392 72C336 24 268 60 256 120C256 220 256 460 256 460Z" fill="#3E3128"/>
+  <!-- Negative Space Spine -->
+  <path d="M256 100V470" stroke="white" stroke-width="12" stroke-linecap="round"/>
+</svg>

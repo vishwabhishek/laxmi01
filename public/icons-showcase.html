@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Woodworked — Custom Abstract Icon Suite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brand-brown: #3E3128;
+      --brand-dark: #2B231D;
+      --brand-cream: #F7F4EE;
+      --brand-cream-card: #FFFFFF;
+      --brand-border: #E6DFD5;
+      --brand-muted: #7E7065;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--brand-cream);
+      color: var(--brand-brown);
+      font-family: 'DM Sans', sans-serif;
+      padding: 3rem 1.5rem;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      margin-bottom: 3.5rem;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      background: #EAE2D7;
+      color: var(--brand-brown);
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+    }
+    h1 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 2.75rem;
+      font-weight: 700;
+      color: var(--brand-dark);
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+    .subtitle {
+      font-size: 1.15rem;
+      color: var(--brand-muted);
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .section-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 2.5rem 0 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--brand-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .section-title span {
+      font-size: 0.875rem;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      color: var(--brand-muted);
+    }
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .icon-card {
+      background: var(--brand-cream-card);
+      border: 1px solid var(--brand-border);
+      border-radius: 16px;
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: all 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      position: relative;
+    }
+    .icon-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 32px rgba(62, 49, 40, 0.08);
+      border-color: #D6CBC0;
+    }
+    .icon-preview {
+      width: 96px;
+      height: 96px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      padding: 0.5rem;
+      background: #FAF8F5;
+      border-radius: 12px;
+      border: 1px solid #EFEAE3;
+    }
+    .icon-preview img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .icon-name {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--brand-dark);
+      margin-bottom: 0.35rem;
+    }
+    .icon-purpose {
+      font-size: 0.85rem;
+      color: var(--brand-muted);
+      line-height: 1.45;
+      margin-bottom: 1rem;
+      min-height: 2.5rem;
+    }
+    .icon-meta {
+      font-size: 0.72rem;
+      font-family: monospace;
+      background: #F4EFEB;
+      color: #6C5B50;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    .btn-row {
+      display: flex;
+      gap: 0.5rem;
+      width: 100%;
+    }
+    .btn {
+      flex: 1;
+      padding: 0.5rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: 8px;
+      border: 1px solid var(--brand-border);
+      background: #FAF8F5;
+      color: var(--brand-brown);
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .btn:hover {
+      background: var(--brand-brown);
+      color: #FFF;
+      border-color: var(--brand-brown);
+    }
+    .copy-success {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 0.7rem;
+      background: #2E7D32;
+      color: white;
+      padding: 2px 8px;
+      border-radius: 4px;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">Bespoke Design System</div>
+      <h1>Woodworked Abstract Icon Collection</h1>
+      <p class="subtitle">Custom architectural vector glyphs designed to match the original Woodworked template aesthetic, geometry (512&times;512), and warm espresso color token (<code>#3E3128</code>).</p>
+    </header>
+
+    <!-- NEW CUSTOM ICONS -->
+    <div class="section-title">
+      <h2>New Custom Crafted Icons</h2>
+      <span>8 purpose-built vectors</span>
+    </div>
+    <div class="icon-grid">
+
+      <!-- 1. DOVETAIL -->
+      <div class="icon-card">
+        <div class="copy-success" id="tip-1">Copied!</div>
+        <div class="icon-preview">
+          <img src="/assets/custom-icons/abstract-dovetail.svg" alt="Dovetail Joinery">
+        </div>
+        <div class="icon-name">Dovetail Joinery</div>
+        <div class="icon-purpose">Bespoke Cabinetry, Interlocking Joints & Handcraft</div>
+        <div class="icon-meta">512&times;512 &bull; #3E3128</div>
+        <div class="btn-row">
+          <a class="btn" href="/assets/custom-icons/abstract-dovetail.svg" download>Download</a>
+          <button class="btn" onclick="copyPath('/assets/custom-icons/abstract-dovetail.svg', 1)">Copy Path</button>
+        </div>
+      </div>
+
+      <!-- 2. GROWTH RINGS -->
+      <div class="icon-card">
+        <div class="copy-success" id="tip-2">Copied!</div>
+        <div class="icon-preview">
+          <img src="/assets/custom-icons/abstract-growth-rings.svg" alt="Growth Rings">
+        </div>
+        <div class="icon-name">Growth Rings</div>
+        <div class="icon-purpose">Organic Timber Sourcing, Heartwood & Forest Heritage</div>
+        <div class="icon-meta">512&times;512 &bull; #3E3128</div>
+        <div class="btn-row">
+          <a class="btn" href="/assets/custom-icons/abstract-growth-rings.svg" download>Download</a>
+          <button class="btn" onclick="copyPath('/assets/custom-icons/abstract-growth-rings.svg', 2)">Copy Path</button>
+        </div>
+      </div>
+
+      <!-- 3. ARCHITECTURAL ARCH -->
+      <div class="icon-card">
+        <div class="copy-success" id="tip-3">Copied!</div>
+        <div class="icon-preview">
+          <img src="/assets/custom-icons/abstract-architectural-arch.svg" alt="Architectural Arch">
+        </div>
+        <div class="icon-name">Architectural Arch</div>
+        <div class="icon-purpose">Buildings, Structural Woodwork & Spatial Harmony</div>
+        <div class="icon-meta">512&times;512 &bull; #3E3128</div>
+        <div class="btn-row">
+          <a class="btn" href="/assets/custom-icons/abstract-architectural-arch.svg" download>Download</a>
+          <button class="btn" onclick="copyPath('/assets/custom-icons/abstract-architectural-arch.svg', 3)">Copy Path</button>
+        </div>
+      </div>
+
+      <!-- 4. DRAFTING COMPASS -->
+      <div class="icon-card">
+        <div class="copy-success" id="tip-4">Copied!</div>
+        <div class="icon-preview">
+          <img src="/assets/custom-icons/abstract-compass-caliper.svg" alt="Compass & Caliper">
+        </div>
+        <div class="icon-name">Compass &amp; Caliper</div>
+        <div class="icon-purpose">Precision Engineering, Architectural Plans & Accuracy</div>
+        <div class="icon-meta">512&times;512 &bull; #3E3128</div>
+        <div class="btn-row">
+          <a class="btn" href="/assets/custom-icons/abstract-compass-caliper.svg" download>Download</a>
+          <button class="btn" onclick="copyPath('/assets/custom-icons/abstract-compass-caliper.svg', 4)">Copy Path</button>
+        </div>
+      </div>
+
+      <!-- 5. WOOD SHAVING -->
+      <div class="icon-card">
+        <div class="copy-success" id="tip-5">Copied!</div>
+        <div class="icon-preview">
+          <img src="/assets/custom-icons/abstract-wood-shaving.svg" alt="Wood Shaving">
+        </div>
+        <div class="icon-name">Wood Shaving</div>
+        <div class="icon-purpose">Hand-Planing Artistry, Smooth Curves & Texture</div>
+        <div class="icon-meta">512&times;512 &bull; #3E3128</div>
+        <div class="btn-row">
+          <a class="btn" href="/assets/custom-icons/abstract-wood-shaving.svg" download>Download</a>
+          <button class="btn" onclick="copyPath('/assets/custom-icons/abstract-wood-shaving.svg', 5)">Copy Path</button>
+        </div>
+      </div>
+
+      <!-- 6. BOTANICAL CANOPY -->
+      <div class="icon-card">
+        <div class="copy-success" id="tip-6">Copied!</div>
+        <div class="icon-preview">
+          <img src="/assets/custom-icons/abstract-leaf-canopy.svg" alt="Botanical Canopy">
+        </div>
+        <div class="icon-name">Botanical Canopy</div>
+        <div class="icon-purpose">FSC Sustainability, Ecological Forestry & Replanting</div>
+        <div class="icon-meta">512&times;512 &bull; #3E3128</div>
+        <div class="btn-row">
+          <a class="btn" href="/assets/custom-icons/abstract-leaf-canopy.svg" download>Download</a>
+          <button class="btn" onclick="copyPath('/assets/custom-icons/abstract-leaf-canopy.svg', 6)">Copy Path</button>
+        </div>
+      </div>
+
+      <!-- 7. BESPOKE CHAIR -->
+      <div class="icon-card">
+        <div class="copy-success" id="tip-7">Copied!</div>
+        <div class="icon-preview">
+          <img src="/assets/custom-icons/abstract-furnishing-seat.svg" alt="Bespoke Seating">
+        </div>
+        <div class="icon-name">Bespoke Furnishing</div>
+        <div class="icon-purpose">Custom Furniture, Seating & Ergonomic Living</div>
+        <div class="icon-meta">512&times;512 &bull; #3E3128</div>
+        <div class="btn-row">
+          <a class="btn" href="/assets/custom-icons/abstract-furnishing-seat.svg" download>Download</a>
+          <button class="btn" onclick="copyPath('/assets/custom-icons/abstract-furnishing-seat.svg', 7)">Copy Path</button>
+        </div>
+      </div>
+
+      <!-- 8. ARTISAN STAR -->
+      <div class="icon-card">
+        <div class="copy-success" id="tip-8">Copied!</div>
+        <div class="icon-preview">
+          <img src="/assets/custom-icons/abstract-finish-star.svg" alt="Finishing Star">
+        </div>
+        <div class="icon-name">Artisan Seal</div>
+        <div class="icon-purpose">Lifetime Guarantee, Danish Oil Finish & Prestige</div>
+        <div class="icon-meta">512&times;512 &bull; #3E3128</div>
+        <div class="btn-row">
+          <a class="btn" href="/assets/custom-icons/abstract-finish-star.svg" download>Download</a>
+          <button class="btn" onclick="copyPath('/assets/custom-icons/abstract-finish-star.svg', 8)">Copy Path</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ORIGINAL ICONS FOR COMPARISON -->
+    <div class="section-title">
+      <h2>Original Extracted Reference Icons</h2>
+      <span>4 original Webflow assets</span>
+    </div>
+    <div class="icon-grid">
+      <div class="icon-card">
+        <div class="icon-preview">
+          <img src="/assets/668d4d372589b149e514bf0d_abstract (1) (1).svg" alt="Original Abstract 1">
+        </div>
+        <div class="icon-name">Original Abstract 1</div>
+        <div class="icon-purpose">Extracted Reference Hero Feature Icon 1</div>
+        <div class="icon-meta">512&times;512 &bull; #3E3128</div>
+      </div>
+
+      <div class="icon-card">
+        <div class="icon-preview">
+          <img src="/assets/668d4d37c6353227e6fc0f4a_abstract (2) (1).svg" alt="Original Abstract 2">
+        </div>
+        <div class="icon-name">Original Abstract 2</div>
+        <div class="icon-purpose">Extracted Reference Hero Feature Icon 2</div>
+        <div class="icon-meta">512&times;512 &bull; #3E3128</div>
+      </div>
+
+      <div class="icon-card">
+        <div class="icon-preview">
+          <img src="/assets/668d4d370e1be593aa9351fd_abstract (3) (2).svg" alt="Original Abstract 3">
+        </div>
+        <div class="icon-name">Original Abstract 3</div>
+        <div class="icon-purpose">Extracted Reference Hero Feature Icon 3</div>
+        <div class="icon-meta">512&times;512 &bull; #3E3128</div>
+      </div>
+
+      <div class="icon-card">
+        <div class="icon-preview">
+          <img src="/assets/668d4d37c9d000d6d3e5e442_abstract (4) (1).svg" alt="Original Abstract 4">
+        </div>
+        <div class="icon-name">Original Abstract 4</div>
+        <div class="icon-purpose">Extracted Reference Hero Feature Icon 4</div>
+        <div class="icon-meta">512&times;512 &bull; #3E3128</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function copyPath(path, id) {
+      navigator.clipboard.writeText(path).then(() => {
+        const tip = document.getElementById('tip-' + id);
+        tip.style.opacity = '1';
+        setTimeout(() => { tip.style.opacity = '0'; }, 1500);
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Arch -->
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M256 40C145.543 40 56 129.543 56 240V472H136V240C136 173.726 189.726 120 256 120C322.274 120 376 173.726 376 240V472H456V240C456 129.543 366.457 40 256 40Z" fill="#3E3128"/>
+  <!-- Inner Keystone Column -->
+  <path d="M216 260C216 237.909 233.909 220 256 220C278.091 220 296 237.909 296 260V472H216V260Z" fill="#3E3128"/>
+  <!-- Base Plinth -->
+  <rect x="24" y="452" width="464" height="28" rx="6" fill="#3E3128"/>
+</svg>
