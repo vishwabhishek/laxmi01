@@ -1,7 +1,34 @@
-import { resolve } from 'path';
+import fs from 'fs';
+import path, { resolve } from 'path';
 import { defineConfig } from 'vite';
 
+function cleanUrlsPlugin() {
+  return {
+    name: 'clean-urls-plugin',
+    configureServer(server) {
+      server.middlewares.use((req, res, next) => {
+        const url = req.url ? req.url.split('?')[0] : '';
+        if (url && !url.includes('.') && !url.startsWith('/@') && !url.startsWith('/__')) {
+          const clean = url.endsWith('/') ? url.slice(0, -1) : url;
+          if (clean) {
+            const htmlPath = path.join(__dirname, clean, 'index.html');
+            const directHtml = path.join(__dirname, clean + '.html');
+            if (fs.existsSync(htmlPath)) {
+              req.url = clean + '/index.html' + (req.url.includes('?') ? '?' + req.url.split('?')[1] : '');
+            } else if (fs.existsSync(directHtml)) {
+              req.url = clean + '.html' + (req.url.includes('?') ? '?' + req.url.split('?')[1] : '');
+            }
+          }
+        }
+        next();
+      });
+    }
+  };
+}
+
 export default defineConfig({
+  appType: 'mpa',
+  plugins: [cleanUrlsPlugin()],
   server: {
     port: 5173,
     host: true
@@ -18,6 +45,7 @@ export default defineConfig({
         service_flooring: resolve(__dirname, 'services/flooring/index.html'),
         service_buildings: resolve(__dirname, 'services/buildings/index.html'),
         portfolio: resolve(__dirname, 'portfolio/index.html'),
+        project_4life_andheri: resolve(__dirname, 'projects/4life-andheri/index.html'),
         project_light_pine_kitchen: resolve(__dirname, 'projects/light-pine-kitchen/index.html'),
         project_airy_apartment: resolve(__dirname, 'projects/airy-apartment/index.html'),
         project_modern_kitchen: resolve(__dirname, 'projects/modern-kitchen/index.html'),

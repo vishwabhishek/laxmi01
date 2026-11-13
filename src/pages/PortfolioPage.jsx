@@ -7,12 +7,15 @@ import { projects } from "../data/siteData";
 export default function PortfolioPage() {
   const [filter, setFilter] = useState("All");
 
-  const categories = ["All", "Kitchen", "Residential", "Estate"];
+  const categories = ["All", "Turnkey", "Commercial", "Joinery", "Acoustic", "Modular"];
 
   const filteredProjects =
     filter === "All"
       ? projects
-      : projects.filter((p) => p.tag.toLowerCase().includes(filter.toLowerCase()));
+      : projects.filter((p) =>
+          p.tag.toLowerCase().includes(filter.toLowerCase()) ||
+          p.title.toLowerCase().includes(filter.toLowerCase())
+        );
 
   return (
     <main>
@@ -30,7 +33,7 @@ export default function PortfolioPage() {
                 fontWeight: 700
               }}
             >
-              [&nbsp;&nbsp;&nbsp;Woodworking, Joinery & Carpentry Projects&nbsp;&nbsp;&nbsp;]
+              Enterprise Project Portfolio
             </span>
           </div>
           <h1
@@ -43,7 +46,7 @@ export default function PortfolioPage() {
               color: "var(--color--darkest)"
             }}
           >
-            Our Work
+            Commercial Fit-Outs &amp; Executed Projects
           </h1>
         </div>
       </section>
@@ -61,7 +64,7 @@ export default function PortfolioPage() {
             gap: "2rem"
           }}
         >
-          <div style={{ maxWidth: "600px" }}>
+          <div style={{ maxWidth: "680px" }}>
             <h2
               style={{
                 fontFamily: "var(--font--heading-font)",
@@ -72,10 +75,10 @@ export default function PortfolioPage() {
                 color: "var(--color--darkest)"
               }}
             >
-              Browse some of our favorite projects.
+              Contracting Execution Across Corporate &amp; Institutional Facilities
             </h2>
             <p style={{ margin: 0, fontSize: "1.0625rem", lineHeight: "1.7", color: "var(--color--darkest)" }}>
-              Explore a curated selection of bespoke kitchens, handcrafted furniture suites, and architectural interior timber commissions.
+              Demonstrating full-scope turnkey fit-outs, high-volume modular workstation deployments, high-performance acoustic panelling, and executive architectural millwork executed to tight milestone deadlines and stringent tender specifications.
             </p>
           </div>
 
@@ -141,18 +144,36 @@ export default function PortfolioPage() {
                 </div>
                 <div style={{ padding: "2.5rem" }}>
                   <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.75rem" }}>
-                    <span
-                      style={{
-                        fontFamily: "var(--font--heading-font)",
-                        fontSize: "0.75rem",
-                        textTransform: "uppercase",
-                        letterSpacing: "0.1em",
-                        color: "var(--color--dark, #89684f)",
-                        fontWeight: 700
-                      }}
-                    >
-                      [&nbsp;{proj.tag}&nbsp;]
-                    </span>
+                    <div style={{ display: "flex", alignItems: "center", gap: "0.75rem" }}>
+                      <span
+                        style={{
+                          fontFamily: "var(--font--heading-font)",
+                          fontSize: "0.75rem",
+                          textTransform: "uppercase",
+                          letterSpacing: "0.1em",
+                          color: "var(--color--dark, #89684f)",
+                          fontWeight: 700
+                        }}
+                      >
+                        {proj.tag}
+                      </span>
+                      {proj.trades && (
+                        <span
+                          style={{
+                            fontSize: "0.6875rem",
+                            fontWeight: 700,
+                            textTransform: "uppercase",
+                            letterSpacing: "0.08em",
+                            backgroundColor: "var(--color--darkest)",
+                            color: "var(--color--lightest)",
+                            padding: "0.2rem 0.5rem",
+                            borderRadius: "4px"
+                          }}
+                        >
+                          Turnkey Fit-Out
+                        </span>
+                      )}
+                    </div>
                     <span style={{ fontSize: "0.875rem", color: "var(--color--dark, #89684f)" }}>
                       {proj.location}
                     </span>
@@ -182,43 +203,11 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* 4. EDITORIAL TESTIMONIAL BLOCK */}
-      <section style={{ padding: "2rem 4rem 6rem" }}>
-        <div
-          style={{
-            maxWidth: "960px",
-            margin: "0 auto",
-            textAlign: "center",
-            padding: "4rem 3rem",
-            border: "1px solid var(--color--light, #eed5b9)",
-            borderRadius: "var(--spacing--xs, 0.75rem)",
-            backgroundColor: "var(--color--lightest)"
-          }}
-        >
-          <div style={{ color: "var(--color--accent, #e1af87)", fontSize: "1.5rem", marginBottom: "1rem" }}>
-            ★★★★★
-          </div>
-          <blockquote
-            style={{
-              fontFamily: "var(--font--body-font)",
-              fontSize: "1.375rem",
-              lineHeight: "1.65",
-              fontStyle: "italic",
-              color: "var(--color--darkest)",
-              margin: "0 0 1.5rem"
-            }}
-          >
-            "Woodworked brought our historical home vision to life with rare sensitivity and craftsmanship. The fit and finish are nothing short of museum quality."
-          </blockquote>
-          <div style={{ fontWeight: 700, color: "var(--color--darkest)" }}>Lord & Lady Harrington</div>
-          <div style={{ fontSize: "0.875rem", color: "var(--color--dark, #89684f)" }}>Oxfordshire Manor Estate</div>
-        </div>
-      </section>
-
       {/* 5. CTA BANNER */}
       <CtaBanner
-        title="Inquire today for a free consultation & pricing estimate"
-        subtitle="Bring your architectural drawings or vision to our workshop and let our master joiners craft a tailored estimate."
+        title="Share your tender or BOQ for project estimation"
+        subtitle="Send us your drawing sets, tender schedules, or joinery elevations for rapid feasibility study and item-rate pricing."
+        buttonText="Submit BOQ / Contact Us"
       />
     </main>
   );

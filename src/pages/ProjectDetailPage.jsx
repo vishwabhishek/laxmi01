@@ -96,10 +96,10 @@ export default function ProjectDetailPage({ forcedSlug }) {
 
             <div>
               <div style={{ fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--color--dark, #89684f)", marginBottom: "0.375rem", fontWeight: 700 }}>
-                Timber Origin
+                {project.trades ? "Execution Scope" : "Specification Standard"}
               </div>
               <div style={{ fontFamily: "var(--font--heading-font)", fontSize: "1.125rem", fontWeight: 600, color: "var(--color--darkest)" }}>
-                FSC Certified European Hardwood
+                {project.trades ? "Turnkey (Ply · Electrical · Plumbing · Walls)" : "Commercial-Grade BWP & Natural Veneer"}
               </div>
             </div>
           </div>
@@ -125,43 +125,179 @@ export default function ProjectDetailPage({ forcedSlug }) {
         </div>
       </section>
 
-      {/* 3. CASE STUDY NARRATIVE */}
-      <section style={{ padding: "3rem 4rem 5rem" }}>
+      {/* 2B. VIDEO WALKTHROUGH (IF PROJECT HAS VIDEO) */}
+      {project.video && (
+        <section style={{ padding: "0 4rem 5rem" }}>
+          <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
+            <div style={{ marginBottom: "2rem" }}>
+              <div
+                style={{
+                  fontFamily: "var(--font--heading-font)",
+                  fontSize: "0.875rem",
+                  letterSpacing: "0.1em",
+                  textTransform: "uppercase",
+                  color: "var(--color--dark, #89684f)",
+                  marginBottom: "0.5rem",
+                  fontWeight: 700
+                }}
+              >
+                On-Site Video Tour
+              </div>
+              <h2
+                style={{
+                  fontFamily: "var(--font--heading-font)",
+                  fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.04em",
+                  margin: 0,
+                  color: "var(--color--darkest)"
+                }}
+              >
+                1-Minute Turnkey Walkthrough & Handover
+              </h2>
+            </div>
+            <div
+              style={{
+                borderRadius: "var(--spacing--xs, 0.75rem)",
+                overflow: "hidden",
+                border: "1px solid var(--color--light, #eed5b9)",
+                backgroundColor: "#161311",
+                boxShadow: "0 20px 40px rgba(0,0,0,0.12)",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center"
+              }}
+            >
+              <video
+                controls
+                poster={project.videoPoster || project.heroImage}
+                style={{ width: "100%", maxHeight: "680px", objectFit: "contain", display: "block" }}
+              >
+                <source src={project.video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 3. CASE STUDY NARRATIVE & TRADE PILLARS */}
+      <section style={{ padding: "2rem 4rem 5rem" }}>
         <div
           style={{
             maxWidth: "960px",
             margin: "0 auto",
             display: "flex",
             flexDirection: "column",
-            gap: "2rem",
+            gap: "2.5rem",
             fontSize: "1.125rem",
             lineHeight: "1.8",
             color: "var(--color--darkest)"
           }}
         >
-          <h2
-            style={{
-              fontFamily: "var(--font--heading-font)",
-              fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
-              textTransform: "uppercase",
-              letterSpacing: "0.04em",
-              margin: 0
-            }}
-          >
-            The Architectural Vision & Execution
-          </h2>
-          <p style={{ margin: 0 }}>
-            {project.description}
-          </p>
-          <p style={{ margin: 0 }}>
-            Working in tight coordination with the interior design studio, our team precision-cut every timber face to harmonize with natural lighting angles throughout the day. Dovetail joints and grain continuity across drawer faces ensure a calm, unified visual rhythm.
-          </p>
+          <div>
+            <h2
+              style={{
+                fontFamily: "var(--font--heading-font)",
+                fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
+                textTransform: "uppercase",
+                letterSpacing: "0.04em",
+                margin: "0 0 1.5rem",
+                color: "var(--color--darkest)"
+              }}
+            >
+              Comprehensive Turnkey Scope & Execution
+            </h2>
+            <p style={{ margin: "0 0 1.5rem" }}>
+              {project.description}
+            </p>
+          </div>
+
+          {/* Trade Scope Cards (If defined) */}
+          {project.trades && (
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+                gap: "1.5rem",
+                marginTop: "1rem"
+              }}
+            >
+              {project.trades.map((trade, idx) => (
+                <div
+                  key={idx}
+                  style={{
+                    backgroundColor: "var(--color--lightest, #f4e6d5)",
+                    border: "1px solid var(--color--light, #eed5b9)",
+                    borderRadius: "var(--spacing--xs, 0.75rem)",
+                    padding: "1.75rem",
+                    display: "flex",
+                    flexDirection: "column"
+                  }}
+                >
+                  <div
+                    style={{
+                      fontFamily: "var(--font--heading-font)",
+                      fontSize: "0.75rem",
+                      textTransform: "uppercase",
+                      letterSpacing: "0.1em",
+                      color: "var(--color--accent, #e1af87)",
+                      fontWeight: 700,
+                      marginBottom: "0.5rem"
+                    }}
+                  >
+                    Trade 0{idx + 1}
+                  </div>
+                  <h3
+                    style={{
+                      fontFamily: "var(--font--heading-font)",
+                      fontSize: "1.25rem",
+                      margin: "0 0 0.75rem",
+                      color: "var(--color--darkest)"
+                    }}
+                  >
+                    {trade.name}
+                  </h3>
+                  <p style={{ margin: 0, fontSize: "0.9375rem", lineHeight: "1.6", color: "var(--color--darkest)" }}>
+                    {trade.details}
+                  </p>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 
       {/* 4. MULTI-IMAGE GALLERY */}
       <section style={{ padding: "2rem 4rem 6rem" }}>
         <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
+          <div style={{ marginBottom: "2.5rem" }}>
+            <div
+              style={{
+                fontFamily: "var(--font--heading-font)",
+                fontSize: "0.875rem",
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+                color: "var(--color--dark, #89684f)",
+                marginBottom: "0.5rem",
+                fontWeight: 700
+              }}
+            >
+              Project Documentation
+            </div>
+            <h2
+              style={{
+                fontFamily: "var(--font--heading-font)",
+                fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
+                textTransform: "uppercase",
+                letterSpacing: "0.04em",
+                margin: 0,
+                color: "var(--color--darkest)"
+              }}
+            >
+              On-Site Execution & Handover Gallery
+            </h2>
+          </div>
           <div
             style={{
               display: "grid",
@@ -194,9 +330,9 @@ export default function ProjectDetailPage({ forcedSlug }) {
 
       {/* 5. CTA BANNER */}
       <CtaBanner
-        title="Inspired by this project?"
-        subtitle="Schedule an architect consultation or visit our workshop to see live timber samples."
-        buttonText="Enquire Now"
+        title="Planning a Similar Commercial Fit-Out?"
+        subtitle="Submit your tender package, architectural shop drawings, or Bill of Quantities (BOQ) for an immediate execution proposal and mobilization estimate."
+        buttonText="Submit BOQ / Request Tender Proposal"
       />
     </main>
   );

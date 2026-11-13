@@ -16,13 +16,48 @@ export default function Header() {
       <header className="header">
         <div className="header-container">
           <div className="header-logo-wrapper">
-            <Link to="/" className="header-logo-link" aria-label="Woodworked Home">
-              <img
-                src="/assets/668bc50b9438984e5d12880e_Frame%201%20(1).svg"
-                alt="Woodworked"
-                className="header-logo"
-                style={{ height: "28px", width: "auto" }}
-              />
+            <Link
+              to="/"
+              className="header-logo-link"
+              aria-label="Laxmi Enterprises Home"
+              style={{ display: "flex", alignItems: "center", gap: "10px", maxWidth: "none", textDecoration: "none" }}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="28" height="28" fill="none" aria-hidden="true" style={{ flexShrink: 0 }}>
+                <path d="M10 10 H38 V82 H110 V110 H10 Z" fill="#261E18" />
+                <rect x="46" y="10" width="64" height="28" rx="5" fill="#B88655" />
+                <rect x="46" y="46" width="52" height="28" rx="5" fill="#8C5E35" />
+              </svg>
+              <div className="navbar-brand-text" style={{ display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                <span
+                  className="navbar-brand-top"
+                  style={{
+                    fontFamily: "'Plus Jakarta Sans', sans-serif",
+                    fontWeight: 700,
+                    fontSize: "15px",
+                    letterSpacing: "0.09em",
+                    color: "#261E18",
+                    lineHeight: 1.1,
+                    whiteSpace: "nowrap"
+                  }}
+                >
+                  LAXMI ENTERPRISES
+                </span>
+                <span
+                  className="navbar-brand-bottom"
+                  style={{
+                    fontFamily: "'Plus Jakarta Sans', sans-serif",
+                    fontWeight: 600,
+                    fontSize: "9px",
+                    letterSpacing: "0.2em",
+                    color: "#8C5E35",
+                    lineHeight: 1.1,
+                    marginTop: "3px",
+                    whiteSpace: "nowrap"
+                  }}
+                >
+                  INTERIOR &amp; FURNITURE CONTRACTORS
+                </span>
+              </div>
             </Link>
           </div>
 
@@ -108,7 +143,7 @@ export default function Header() {
             </div>
 
             <PrimaryButton to="/contact" variant="darkest" style={{ padding: "0.625rem 1.25rem", borderRadius: "0.5rem" }}>
-              Get a Quote
+              Submit BOQ / Tender
             </PrimaryButton>
 
             {/* Mobile Hamburger Button */}
@@ -202,7 +237,7 @@ export default function Header() {
               onClick={() => setIsOpen(false)}
               style={{ width: "100%", justifyContent: "center" }}
             >
-              Get a Quote
+              Submit BOQ / Tender
             </PrimaryButton>
           </div>
         </div>

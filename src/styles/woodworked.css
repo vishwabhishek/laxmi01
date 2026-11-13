@@ -345,27 +345,10 @@ pre.w-code-block code {
 }
 
 .w-webflow-badge {
-  white-space: nowrap;
-  cursor: pointer;
-  box-shadow: 0 0 0 1px #0000001a, 0 1px 3px #0000001a;
-  visibility: visible !important;
-  opacity: 1 !important;
-  z-index: 2147483647 !important;
-  color: #aaadb0 !important;
-  overflow: unset !important;
-  background-color: #fff !important;
-  border-radius: 3px !important;
-  width: auto !important;
-  height: auto !important;
-  margin: 0 !important;
-  padding: 6px !important;
-  font-size: 12px !important;
-  line-height: 14px !important;
-  text-decoration: none !important;
-  display: inline-block !important;
-  position: fixed !important;
-  inset: auto 12px 12px auto !important;
-  transform: none !important;
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 .w-webflow-badge > img {
@@ -2336,8 +2319,81 @@ figcaption {
 
 .header-logo-link {
   align-items: center;
-  max-width: 12.5rem;
+  max-width: none;
   display: flex;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-text {
+  font-family: var(--font--heading-font, 'Plus Jakarta Sans', sans-serif);
+  font-weight: 700;
+  color: #261E18;
+  font-size: 1.2rem;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.navbar-brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar-brand-top {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.09em;
+  color: #261E18;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.navbar-brand-bottom {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 600;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  color: #8C5E35;
+  line-height: 1.1;
+  margin-top: 3px;
+  white-space: nowrap;
+}
+
+.footer-brand-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.footer-brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.15;
+}
+
+.footer-brand-title {
+  font-family: var(--font--heading-font, 'Plus Jakarta Sans', sans-serif);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #F4E6D5;
+  letter-spacing: 0.38em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.footer-brand-subtitle {
+  font-family: var(--font--body-font, 'DM Sans', sans-serif);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: #C4976A;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  margin-top: 2px;
+  white-space: nowrap;
 }
 
 .header-nav-list {
@@ -4353,6 +4409,10 @@ figcaption {
   position: relative;
 }
 
+.services-layout-one {
+  padding-top: var(--spacing--xl);
+}
+
 .services-layout-one-collection-list {
   grid-column-gap: var(--spacing--xl);
   grid-row-gap: var(--spacing--xl);
@@ -5323,6 +5383,10 @@ figcaption {
     max-width: none;
   }
 
+  .services-layout-one {
+    padding-top: var(--spacing--l);
+  }
+
   .services-layout-one-collection-list {
     grid-column-gap: var(--spacing--l);
     grid-row-gap: var(--spacing--l);
@@ -5866,6 +5930,10 @@ figcaption {
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 1fr;
     width: 100%;
+  }
+
+  .services-layout-one {
+    padding-top: var(--spacing--m);
   }
 
   .services-layout-one-link-wrapper {

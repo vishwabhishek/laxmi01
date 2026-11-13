@@ -166,3 +166,12 @@ body {
     padding-right: 1.25rem !important;
   }
 }
+
+/* Eliminate Webflow badge */
+.w-webflow-badge {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  z-index: -9999 !important;
+}

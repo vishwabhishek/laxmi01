@@ -57,7 +57,7 @@ export default function ServiceDetailPage({ forcedSlug }) {
           </p>
 
           <PrimaryButton to="/contact" variant="darkest">
-            Enquire About {service.title}
+            Request Proposal for {service.title}
           </PrimaryButton>
         </div>
       </section>
@@ -104,7 +104,7 @@ export default function ServiceDetailPage({ forcedSlug }) {
                 fontWeight: 700
               }}
             >
-              [&nbsp;&nbsp;&nbsp;Craftsmanship Methodology&nbsp;&nbsp;&nbsp;]
+              Execution Methodology
             </div>
             <h2
               style={{
@@ -116,7 +116,7 @@ export default function ServiceDetailPage({ forcedSlug }) {
                 color: "var(--color--darkest)"
               }}
             >
-              Tailored for timeless elegance
+              Engineered for commercial rigor and architectural precision
             </h2>
           </div>
 
@@ -125,7 +125,7 @@ export default function ServiceDetailPage({ forcedSlug }) {
               {service.description}
             </p>
             <p style={{ margin: 0 }}>
-              Every installation undergoes strict timber stabilization, ensuring that relative humidity and temperature variations will not compromise joint integrity. We work closely with architects, general contractors, and interior designers to guarantee seamless integration with mechanical, electrical, and plumbing rough-ins.
+              Every project adheres to architectural shop drawings, commercial plywood standards (BWP/BWR), and verified edge-banding finishes. We coordinate on-site with MEP contractors, PMC teams, and client supervisors to guarantee uncompromised schedule adherence and clean snag handovers.
             </p>
           </div>
         </div>
@@ -178,21 +178,14 @@ export default function ServiceDetailPage({ forcedSlug }) {
         </div>
       </section>
 
-      {/* 5. TESTIMONIALS */}
-      <section style={{ padding: "4rem 4rem" }}>
-        <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
-          <TestimonialSlider />
-        </div>
-      </section>
-
-      {/* 6. FAQ ACCORDION */}
+      {/* 5. FAQ ACCORDION */}
       <FaqAccordion title={`Frequently Asked Questions on ${service.title}`} />
 
-      {/* 7. CTA BANNER */}
+      {/* 6. CTA BANNER */}
       <CtaBanner
-        title={`Enquire today for ${service.title}`}
-        subtitle="Book a workshop consultation or request a bespoke quote tailored to your architectural specifications."
-        buttonText="Get a Quote"
+        title={`Partner With Us for ${service.title}`}
+        subtitle="Submit your Bill of Quantities (BOQ), tender drawings, or project specification packages for an immediate execution estimate and mobilization schedule."
+        buttonText="Submit BOQ / Request Tender Proposal"
       />
     </main>
   );

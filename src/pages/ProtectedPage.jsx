@@ -46,7 +46,7 @@ export default function ProtectedPage() {
             fontWeight: 700
           }}
         >
-          [&nbsp;&nbsp;&nbsp;Protected Page&nbsp;&nbsp;&nbsp;]
+          Protected Page
         </div>
         <h1
           style={{

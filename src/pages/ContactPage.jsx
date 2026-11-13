@@ -19,7 +19,7 @@ export default function ContactPage() {
                 fontWeight: 700
               }}
             >
-              [&nbsp;&nbsp;&nbsp;Get in touch&nbsp;&nbsp;&nbsp;]
+              Tender Submissions &amp; Inquiries
             </span>
           </div>
 
@@ -44,10 +44,10 @@ export default function ContactPage() {
                   color: "var(--color--darkest)"
                 }}
               >
-                Contact us for a free quote or consultation
+                Request a Tender Proposal or Project Mobilization Estimate
               </h1>
               <p style={{ fontSize: "1.125rem", lineHeight: "1.75", color: "var(--color--darkest)", margin: "0 0 3rem" }}>
-                We welcome invitations to tender, bespoke private commissions, and architect consultations. Visit our workshop or send us your blueprints today.
+                We welcome invitations to tender, BOQ packages, architectural shop drawings, and commercial contractor partnerships. Connect with our estimation and project delivery team to schedule a site survey or discuss project mobilization timelines.
               </p>
 
               {/* Direct Details List */}
@@ -57,26 +57,26 @@ export default function ContactPage() {
                     Direct Telephone
                   </div>
                   <div style={{ fontFamily: "var(--font--heading-font)", fontSize: "1.25rem", fontWeight: 600, color: "var(--color--darkest)" }}>
-                    +44 (0) 20 7946 0912
+                    +91 98XXX XXXXX
                   </div>
                 </div>
 
                 <div>
                   <div style={{ fontSize: "0.8125rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--color--dark, #89684f)", marginBottom: "0.375rem", fontWeight: 700 }}>
-                    Inquiry Email
+                    Tender &amp; Procurement Desk
                   </div>
                   <div style={{ fontFamily: "var(--font--heading-font)", fontSize: "1.25rem", fontWeight: 600, color: "var(--color--darkest)" }}>
-                    enquiries@woodworked.co.uk
+                    contact@laxmienterprises.in
                   </div>
                 </div>
 
                 <div>
                   <div style={{ fontSize: "0.8125rem", textTransform: "uppercase", letterSpacing: "0.1em", color: "var(--color--dark, #89684f)", marginBottom: "0.375rem", fontWeight: 700 }}>
-                    Workshop & Design Studio
+                    Operational Base &amp; Deployment Hub
                   </div>
                   <div style={{ fontFamily: "var(--font--heading-font)", fontSize: "1.125rem", fontWeight: 500, color: "var(--color--darkest)", lineHeight: "1.6" }}>
-                    The Timber Mill, Sawmill Lane<br />
-                    Chipping Norton, Cotswolds, OX7 5LJ, United Kingdom
+                    Mumbai, Maharashtra, India<br />
+                    Pan-India Commercial Project Deployment
                   </div>
                 </div>
               </div>

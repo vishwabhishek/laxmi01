@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { faqs as defaultFaqs } from "../data/siteData";
 
-export default function FaqAccordion({ items = defaultFaqs, title = "Looking for some answers?", subtitle = "[ FAQs ]" }) {
+export default function FaqAccordion({ items = defaultFaqs, title = "Looking for some answers?", subtitle = "FAQs" }) {
   const [openIndex, setOpenIndex] = useState(0);
 
   const toggle = (idx) => {

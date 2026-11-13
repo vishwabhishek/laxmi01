@@ -16,18 +16,51 @@ export default function Footer() {
         >
           {/* Brand & Newsletter Column */}
           <div>
-            <Link to="/" style={{ display: "inline-block", marginBottom: "1.5rem" }}>
-              <img
-                src="/assets/668bc50b9438984e5d12880e_Frame%201%20(1).svg"
-                alt="Woodworked"
-                style={{
-                  height: "32px",
-                  filter: "brightness(0) invert(1)"
-                }}
-              />
+            <Link
+              to="/"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "12px",
+                textDecoration: "none",
+                marginBottom: "1.5rem"
+              }}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="34" height="34" fill="none" aria-hidden="true" style={{ flexShrink: 0 }}>
+                <path d="M10 10 H38 V82 H110 V110 H10 Z" fill="#F4E6D5" />
+                <rect x="46" y="10" width="64" height="28" rx="5" fill="#B88655" />
+                <rect x="46" y="46" width="52" height="28" rx="5" fill="#8C5E35" />
+              </svg>
+              <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", lineHeight: "1.15" }}>
+                <span
+                  style={{
+                    fontFamily: "var(--font--heading-font, 'Plus Jakarta Sans', sans-serif)",
+                    fontSize: "1.15rem",
+                    fontWeight: 800,
+                    color: "#F4E6D5",
+                    letterSpacing: "0.38em",
+                    textTransform: "uppercase"
+                  }}
+                >
+                  LAXMI
+                </span>
+                <span
+                  style={{
+                    fontFamily: "var(--font--body-font, 'DM Sans', sans-serif)",
+                    fontSize: "0.65rem",
+                    fontWeight: 700,
+                    color: "#C4976A",
+                    letterSpacing: "0.24em",
+                    textTransform: "uppercase",
+                    marginTop: "2px"
+                  }}
+                >
+                  ENTERPRISES
+                </span>
+              </div>
             </Link>
             <p style={{ color: "var(--color--light, #eed5b9)", fontSize: "0.9375rem", lineHeight: "1.7", maxWidth: "340px", marginBottom: "2rem" }}>
-              Bespoke joinery, master carpentry, and custom timber architectural fabrication handcrafted with generational passion since 1967.
+              Turnkey interior fit-out contracting, custom architectural joinery, modular workstation deployments, and corporate interior execution backed by over 25 years of field trade mastery.
             </p>
             <div style={{ display: "flex", gap: "1rem" }}>
               <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" style={{ color: "var(--color--lightest)" }} aria-label="Facebook">
@@ -62,11 +95,11 @@ export default function Footer() {
               Services
             </h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.875rem" }}>
-              <li><Link to="/services/kitchens" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Kitchens</Link></li>
-              <li><Link to="/services/bathrooms" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Bathrooms</Link></li>
-              <li><Link to="/services/furniture" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Furniture</Link></li>
-              <li><Link to="/services/flooring" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Flooring</Link></li>
-              <li><Link to="/services/buildings" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Buildings</Link></li>
+              <li><Link to="/services/kitchens" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Turnkey Interior Contracting &amp; Commercial Fit-Outs</Link></li>
+              <li><Link to="/services/bathrooms" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Hospitality, Healthcare &amp; Institutional Fit-Outs</Link></li>
+              <li><Link to="/services/furniture" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Architectural Joinery, Executive Millwork &amp; Custom Furnishings</Link></li>
+              <li><Link to="/services/flooring" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Acoustic Panelling, Demountable Partitions &amp; Ceilings</Link></li>
+              <li><Link to="/services/buildings" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Modular Workstations &amp; Mission-Critical Facilities</Link></li>
             </ul>
           </div>
         </div>
@@ -86,17 +119,16 @@ export default function Footer() {
           }}
         >
           <div>
-            © Copyright Woodworked {new Date().getFullYear()}. All rights reserved.
+            © Copyright Laxmi Enterprises {new Date().getFullYear()}. All rights reserved.
           </div>
-          <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap" }}>
-            <Link to="/template-help/licences" style={{ color: "inherit", textDecoration: "none" }}>
-              Licensing
+          <div style={{ display: "flex", gap: "1.5rem", alignItems: "center" }}>
+            <span>GST Registered</span>
+            <span>·</span>
+            <span>EHS &amp; Safety Compliant</span>
+            <span>·</span>
+            <Link to="/contact" style={{ color: "inherit", textDecoration: "none" }}>
+              Tender Inquiries
             </Link>
-            <Link to="/template-help/changelog" style={{ color: "inherit", textDecoration: "none" }}>
-              Changelog
-            </Link>
-            <span>Built by FlowForge</span>
-            <span>Powered by Webflow</span>
           </div>
         </div>
       </div>

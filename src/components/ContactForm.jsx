@@ -70,7 +70,7 @@ export default function ContactForm() {
           Thank you!
         </h3>
         <p style={{ margin: "0 0 1.5rem", color: "var(--color--dark, #89684f)" }}>
-          Your submission has been received. Our master craftsmen will review your project and get in touch within 24 hours.
+          Your inquiry has been received. Our project estimation team will review your specifications and contact you within 24 hours.
         </p>
         <PrimaryButton
           onClick={() => {
@@ -187,13 +187,13 @@ export default function ContactForm() {
               outline: "none"
             }}
           >
-            <option value="">Type of Service *</option>
-            <option value="Kitchens">Kitchens</option>
-            <option value="Bathrooms">Bathrooms</option>
-            <option value="Furniture">Furniture</option>
-            <option value="Flooring">Flooring</option>
-            <option value="Buildings">Buildings</option>
-            <option value="Other">Other Bespoke Joinery</option>
+            <option value="">Discipline / Service Required *</option>
+            <option value="Turnkey Interior Contracting & Commercial Fit-Outs">Turnkey Interior Contracting &amp; Commercial Fit-Outs</option>
+            <option value="Hospitality, Healthcare & Institutional Fit-Outs">Hospitality, Healthcare &amp; Institutional Fit-Outs</option>
+            <option value="Architectural Joinery, Executive Millwork & Custom Furnishings">Architectural Joinery, Executive Millwork &amp; Custom Furnishings</option>
+            <option value="Acoustic Panelling, Demountable Partitions & Ceilings">Acoustic Panelling, Demountable Partitions &amp; Ceilings</option>
+            <option value="Modular Workstation Deployments & Mission-Critical Facilities">Modular Workstation Deployments &amp; Mission-Critical Facilities</option>
+            <option value="Tender / BOQ Package Review">Tender / BOQ Package Review</option>
           </select>
           {errors.service && <span style={{ color: "#d9534f", fontSize: "0.75rem", marginTop: "0.25rem", display: "block" }}>{errors.service}</span>}
         </div>

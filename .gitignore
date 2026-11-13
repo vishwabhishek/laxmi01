@@ -15,3 +15,15 @@ yarn-error.log*
 .env.local
 .DS_Store
 Thumbs.db
+
+# Archives & Temp binaries
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# IDE & Editor directories
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace

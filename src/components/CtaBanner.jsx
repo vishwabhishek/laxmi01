@@ -2,9 +2,9 @@ import React from "react";
 import PrimaryButton from "./PrimaryButton";
 
 export default function CtaBanner({
-  title = "Enquire now for a free quote",
-  subtitle = "Whether you have architectural blueprints or an early concept, our master woodworkers are here to bring your vision to life.",
-  buttonText = "Get in touch",
+  title = "Partner With Us on Your Next Turnkey Fit-Out Project",
+  subtitle = "Share your Bill of Quantities (BOQ), tender drawings, or project specification packages for a comprehensive execution proposal and mobilization schedule.",
+  buttonText = "Submit BOQ / Request Tender Proposal",
   buttonLink = "/contact"
 }) {
   return (

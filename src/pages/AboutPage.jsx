@@ -1,29 +1,28 @@
 import React from "react";
 import PrimaryButton from "../components/PrimaryButton";
 import CtaBanner from "../components/CtaBanner";
-import { teamMembers } from "../data/siteData";
 
 export default function AboutPage() {
   const processSteps = [
     {
       num: "01",
-      title: "Consultation & Timber Selection",
-      desc: "We begin by understanding your space, aesthetic goals, and functional demands. We personally select the ideal FSC-certified sustainable timber species for your environment."
+      title: "Drawing & BOQ Study",
+      desc: "Thorough analysis of architectural AutoCAD/Revit plans, joinery elevations, hardware specifications, and Bill of Quantities to identify site-level feasibility and value-engineering opportunities."
     },
     {
       num: "02",
-      title: "3D CAD Modeling & Prototyping",
-      desc: "Every cut is drafted in precision 3D CAD. We share detailed digital schematics and full-scale timber joint mockups for your feedback and sign-off before manufacturing."
+      title: "Site Survey & Mobilisation",
+      desc: "Precise laser measurements across site finished levels, wall plumbness, and service conduit clearances, followed by mobilization of verified carpenters and core tooling."
     },
     {
       num: "03",
-      title: "Hand Joinery & Artisan Crafting",
-      desc: "Our master carpenters shape, plane, and joint each component by hand using traditional mortise-and-tenon, dovetail, and lap joint carpentry methods."
+      title: "Precision Execution & Supervision",
+      desc: "Hands-on daily supervision by our Founder & Principal Supervisor, enforcing rigid schedule milestones, drawing adherence, edge-banding tolerances, and clean joinery finishes."
     },
     {
       num: "04",
-      title: "Site Delivery & Seamless Installation",
-      desc: "Our installation crew meticulously fits every unit on site, adjusting for room variances to deliver a flawless, whisper-quiet architectural integration."
+      title: "Snag Inspection & Handover",
+      desc: "Joint snag-list audit alongside project managers, architects, and main contractors, clearing micro-defects prior to formal client sign-off and on-time project handover."
     }
   ];
 
@@ -43,7 +42,7 @@ export default function AboutPage() {
                 fontWeight: 700
               }}
             >
-              [&nbsp;&nbsp;&nbsp;Discover the business&nbsp;&nbsp;&nbsp;]
+              Company Overview &amp; Capabilities
             </span>
           </div>
 
@@ -67,20 +66,20 @@ export default function AboutPage() {
                   color: "var(--color--darkest)"
                 }}
               >
-                Masterful craftsmanship
+                Commercial Interior Fit-Out &amp; Joinery Excellence
               </h1>
               <p style={{ fontSize: "1.125rem", lineHeight: "1.8", color: "var(--color--darkest)", margin: "0 0 2rem" }}>
-                Founded in 1967, Woodworked has spent over five decades championing the heritage of British joinery. We believe exceptional timber work is not simply assembled—it is sculpted, grain-matched, and built to outlive generations.
+                Backed by over 25 years of hands-on site leadership, Laxmi Enterprises executes turnkey commercial interior fit-outs, bulk modular workstation deployments, and bespoke architectural joinery across Mumbai and pan-India.
               </p>
               <PrimaryButton to="/contact" variant="darkest">
-                Start a Conversation
+                Request Tender Consultation
               </PrimaryButton>
             </div>
 
             <div style={{ borderRadius: "var(--spacing--xs, 0.75rem)", overflow: "hidden", height: "450px" }}>
               <img
                 src="/assets/668bc905512dc504f0dfd42e_pexels-heyho-6933769%20(2).webp"
-                alt="Woodworked Workshop"
+                alt="Carpentry and Joinery Site"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
             </div>
@@ -88,7 +87,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 2. TEXT LAYOUT THREE (Who We Are Story) */}
+      {/* 2. TEXT LAYOUT THREE (Enterprise Background) */}
       <section className="text-layout-three" style={{ padding: "5rem 4rem" }}>
         <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
           <div style={{ marginBottom: "1rem" }}>
@@ -102,7 +101,7 @@ export default function AboutPage() {
                 fontWeight: 700
               }}
             >
-              [&nbsp;&nbsp;&nbsp;Who we are&nbsp;&nbsp;&nbsp;]
+              Enterprise Background
             </span>
           </div>
 
@@ -125,14 +124,14 @@ export default function AboutPage() {
                 color: "var(--color--darkest)"
               }}
             >
-              A team brimming with passion, expertise and knowledge
+              Over 25 Years of Contracting Excellence &amp; Field Leadership
             </h2>
             <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem", fontSize: "1.0625rem", lineHeight: "1.75" }}>
               <p style={{ margin: 0 }}>
-                Our artisan collective brings together cabinetmakers, architectural joiners, restoration specialists, and finish chemists. Working under one roof in our state-of-the-art timber facility, we merge centuries-old hand plane techniques with high-precision digital milling.
+                Founded and directed by a veteran project supervisor with over two decades of practical contracting experience across major commercial headquarters, IT data centres, luxury hotels, and institutional facilities.
               </p>
               <p style={{ margin: 0 }}>
-                We respect timber as a living medium. We carefully calculate atmospheric acclimatization, seasonal expansion coefficients, and natural movement so our installations remain flawless across centuries of domestic living.
+                We bridge the critical gap between architectural design intent and on-site reality—deploying a dedicated workforce of 16–30+ skilled tradesmen with zero tolerance for drawing deviations, safety compromises, or schedule slippages.
               </p>
             </div>
           </div>
@@ -153,14 +152,14 @@ export default function AboutPage() {
           <div style={{ height: "380px", borderRadius: "var(--spacing--xs, 0.75rem)", overflow: "hidden" }}>
             <img
               src="/assets/669e2cafddfd73667fc9da5b_pexels-heyho-7587805%20(1).webp"
-              alt="Hand Chiseling"
+              alt="Joinery Crafting"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </div>
           <div style={{ height: "380px", borderRadius: "var(--spacing--xs, 0.75rem)", overflow: "hidden" }}>
             <img
               src="/assets/669e2d709ee33e23fd9394eb_pexels-heyho-7214467%20(1).webp"
-              alt="Timber Seasoning"
+              alt="Timber Installation"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
           </div>
@@ -182,7 +181,7 @@ export default function AboutPage() {
                 fontWeight: 700
               }}
             >
-              [&nbsp;&nbsp;&nbsp;Our Process for reliable success&nbsp;&nbsp;&nbsp;]
+              Execution Rigor &amp; Governance
             </div>
             <h2
               style={{
@@ -193,7 +192,7 @@ export default function AboutPage() {
                 margin: 0
               }}
             >
-              From raw trunk to refined architecture
+              From Blueprint &amp; BOQ to Snag-Free Handover
             </h2>
           </div>
 
@@ -247,10 +246,10 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 5. TEAM LAYOUT ONE */}
-      <section className="team-layout-one" style={{ padding: "4rem 4rem 6rem" }}>
+      {/* 5. LEADERSHIP PROFILE */}
+      <section className="leadership-layout" style={{ padding: "4rem 4rem 6rem", backgroundColor: "var(--color--lightest, #f4e6d5)" }}>
         <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: "4rem" }}>
+          <div style={{ textAlign: "center", marginBottom: "3rem" }}>
             <div
               style={{
                 fontFamily: "var(--font--heading-font)",
@@ -262,7 +261,7 @@ export default function AboutPage() {
                 fontWeight: 700
               }}
             >
-              [&nbsp;&nbsp;&nbsp;Meet the team&nbsp;&nbsp;&nbsp;]
+              Field Leadership &amp; Governance
             </div>
             <h2
               style={{
@@ -273,61 +272,55 @@ export default function AboutPage() {
                 margin: 0
               }}
             >
-              The faces behind the magic
+              Founder-Led Field Supervision &amp; Trade Mastery
             </h2>
           </div>
 
           <div
             style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-              gap: "2rem"
+              maxWidth: "850px",
+              margin: "0 auto",
+              border: "1px solid var(--color--light, #eed5b9)",
+              borderRadius: "var(--spacing--xs, 0.75rem)",
+              backgroundColor: "#fff",
+              padding: "3rem",
+              boxShadow: "0 10px 30px rgba(0,0,0,0.05)"
             }}
           >
-            {teamMembers.map((member, i) => (
-              <div
-                key={i}
-                style={{
-                  border: "1px solid var(--color--light, #eed5b9)",
-                  borderRadius: "var(--spacing--xs, 0.75rem)",
-                  backgroundColor: "var(--color--lightest, #f4e6d5)",
-                  overflow: "hidden"
-                }}
-              >
-                <div style={{ height: "300px", overflow: "hidden" }}>
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                  />
-                </div>
-                <div style={{ padding: "1.75rem" }}>
-                  <h3
-                    style={{
-                      fontFamily: "var(--font--heading-font)",
-                      fontSize: "1.25rem",
-                      fontWeight: 700,
-                      margin: "0 0 0.5rem",
-                      color: "var(--color--darkest)"
-                    }}
-                  >
-                    {member.name}
-                  </h3>
-                  <p style={{ margin: 0, fontSize: "0.875rem", color: "var(--color--dark, #89684f)", fontWeight: 500 }}>
-                    {member.role}
-                  </p>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "2.5rem", alignItems: "center" }}>
+              <div style={{ width: "160px", height: "160px", borderRadius: "50%", overflow: "hidden", flexShrink: 0 }}>
+                <img
+                  src="/assets/668fbaf96cc6b383d8fd3335_pexels-shkrabaanthony-5466149.webp"
+                  alt="Founder &amp; Principal Field Director"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              </div>
+              <div style={{ flex: "1 1 300px" }}>
+                <span style={{ fontSize: "0.8125rem", textTransform: "uppercase", letterSpacing: "0.15em", fontWeight: 700, color: "#8C5E35" }}>
+                  25+ Years Field Leadership
+                </span>
+                <h3 style={{ fontFamily: "var(--font--heading-font)", fontSize: "1.75rem", margin: "0.5rem 0 0.75rem", color: "var(--color--darkest)" }}>
+                  Founder &amp; Principal Field Director
+                </h3>
+                <p style={{ fontSize: "1rem", lineHeight: "1.7", color: "var(--color--darkest)", margin: "0 0 1.25rem" }}>
+                  A veteran master craftsman and field director who has spearheaded high-spec interior contracting across commercial headquarters, data centres, luxury hospitality suites, and corporate facilities. Personally oversees daily on-site craftsmanship, drawing compliance, safety protocols, and MEP interface coordination.
+                </p>
+                <div style={{ display: "flex", gap: "2rem", flexWrap: "wrap", fontSize: "0.875rem", fontWeight: 600, color: "var(--color--dark)" }}>
+                  <div>✓ 25+ Years Field Contracting</div>
+                  <div>✓ Direct On-Site Supervision</div>
+                  <div>✓ 16–30+ Certified Tradesmen</div>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
 
       {/* 6. CTA BANNER */}
       <CtaBanner
-        title="Ready to commission your bespoke timber project?"
-        subtitle="Book a workshop tour or schedule an initial consultation with our master design team."
-        buttonText="Get in Touch"
+        title="Ready to partner on your upcoming fit-out project?"
+        subtitle="Submit your tender packages, architectural shop drawings, or Bill of Quantities (BOQ) for an executable estimate and mobilization schedule."
+        buttonText="Submit BOQ / Request Proposal"
       />
     </main>
   );

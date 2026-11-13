@@ -65,7 +65,7 @@ export default function HomePage() {
                   color: "var(--color--lightest)"
                 }}
               >
-                [&nbsp;&nbsp;&nbsp;Bespoke Joiner, Carpenter & Woodworking&nbsp;&nbsp;&nbsp;]
+                CORPORATE INTERIOR FIT-OUT &amp; ARCHITECTURAL JOINERY CONTRACTORS · MUMBAI &amp; PAN-INDIA
               </div>
               <h1
                 style={{
@@ -74,28 +74,48 @@ export default function HomePage() {
                   lineHeight: "1.2",
                   letterSpacing: "0.05em",
                   textTransform: "uppercase",
-                  margin: 0,
+                  margin: "0 0 1.5rem 0",
                   fontWeight: 700
                 }}
               >
-                Turning homes into artwork
+                TURNKEY INTERIOR FIT-OUT &amp; ARCHITECTURAL JOINERY AT SCALE
               </h1>
+              <p
+                style={{
+                  fontSize: "1.125rem",
+                  lineHeight: "1.6",
+                  color: "var(--color--lightest)",
+                  opacity: 0.9,
+                  marginBottom: "2rem",
+                  maxWidth: "680px"
+                }}
+              >
+                Backed by 20–30 years of hands-on supervisory and trade leadership, Laxmi Enterprises executes comprehensive turnkey interior fit-outs, custom architectural joinery, modular workstation deployments, and corporate interior contracting for main EPC contractors, PMCs, corporate enterprises, and developers.
+              </p>
+              <div>
+                <PrimaryButton to="/contact" variant="lightest" style={{ padding: "0.875rem 2rem", fontSize: "0.9375rem" }}>
+                  SUBMIT BOQ / REQUEST TENDER PROPOSAL
+                </PrimaryButton>
+              </div>
             </div>
 
             {/* Right Corner Link Capsule */}
             <Link
               to="/portfolio"
               style={{
-                backgroundColor: "var(--color--lightest, #f4e6d5)",
+                backgroundColor: "rgba(244, 230, 213, 0.95)",
+                backdropFilter: "blur(12px)",
+                WebkitBackdropFilter: "blur(12px)",
                 color: "var(--color--darkest, #3e3128)",
                 borderRadius: "var(--spacing--xs, 0.75rem)",
-                padding: "1.75rem 2rem",
+                padding: "2rem",
                 textDecoration: "none",
-                maxWidth: "320px",
+                maxWidth: "360px",
                 display: "flex",
                 flexDirection: "column",
                 gap: "1rem",
-                transition: "transform 0.3s ease, box-shadow 0.3s ease"
+                transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                boxShadow: "0 20px 40px rgba(0,0,0,0.2)"
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = "translateY(-4px)";
@@ -105,20 +125,23 @@ export default function HomePage() {
               }}
             >
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-                <span style={{ fontSize: "0.8125rem", textTransform: "uppercase", letterSpacing: "0.1em", fontWeight: 700 }}>
-                  Featured Works
+                <span style={{ fontSize: "0.8125rem", textTransform: "uppercase", letterSpacing: "0.1em", fontWeight: 700, color: "#8C5E35" }}>
+                  Enterprise Capability
                 </span>
                 <span style={{ fontSize: "1.25rem" }}>↗</span>
               </div>
-              <div style={{ fontSize: "1.0625rem", fontWeight: 600, lineHeight: "1.4" }}>
-                Take a look at some of our previous work
+              <div style={{ fontSize: "1.125rem", fontWeight: 700, lineHeight: "1.3", color: "var(--color--darkest)" }}>
+                Engineered for Commercial &amp; Institutional Scale
               </div>
+              <p style={{ margin: 0, fontSize: "0.875rem", lineHeight: "1.5", color: "#5c4a3e" }}>
+                GST-registered commercial interior contractor with active pan-India deployment. 16–30 deployable trade-certified craftsmen on call, scalable to 50–100+ tradesmen, with proven delivery across Data Centres, BFSI Facilities, Corporate Headquarters, and Luxury Hospitality projects.
+              </p>
             </Link>
           </div>
         </div>
       </section>
 
-      {/* 2. TEXT LAYOUT ONE (Who We Are Introduction) */}
+      {/* 2. TEXT LAYOUT ONE (Corporate Profile & Capabilities) */}
       <section className="text-layout-one" style={{ padding: "6rem 4rem" }}>
         <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "2rem" }}>
@@ -133,7 +156,7 @@ export default function HomePage() {
                 fontWeight: 700
               }}
             >
-              [&nbsp;&nbsp;&nbsp;Who we are&nbsp;&nbsp;&nbsp;]
+              Corporate Profile &amp; Capabilities
             </h2>
             <img
               src="/assets/668d3a4363eab755ea4d62c5_Vector.svg"
@@ -154,7 +177,7 @@ export default function HomePage() {
                 color: "var(--color--darkest)"
               }}
             >
-              Hand Crafting perfection since 1967
+              Over 25 Years of Proven Field Contracting Leadership
             </h3>
             <div
               className="divider-line background-accent"
@@ -171,10 +194,10 @@ export default function HomePage() {
               }}
             >
               <p style={{ margin: 0 }}>
-                At Woodworked, we take deep pride in breathing enduring life into raw timber. Established over five decades ago, our family-led workshop has collaborated with leading architects, heritage conservationists, and discerning homeowners.
+                Founded and directed by a veteran trade supervisor with over two decades of practical on-site contracting experience, Laxmi Enterprises executes turnkey commercial interior fit-outs, high-volume modular workstation installations, and bespoke architectural millwork.
               </p>
               <p style={{ margin: 0 }}>
-                Every dovetail, tenon, and chamfer is cut with absolute structural precision. From sustainable forestry provenance through to the final hand-rubbed wax finish, our commitment to timeless craftsmanship remains uncompromising.
+                Led on-site by our Founder &amp; Principal Supervisor, our dedicated force of 16–30+ skilled craftsmen delivers projects across Mumbai and pan-India with rigorous schedule governance, strict GFC drawing compliance, and zero-defect QA/QC standards.
               </p>
             </div>
           </div>
@@ -197,7 +220,7 @@ export default function HomePage() {
                   fontWeight: 700
                 }}
               >
-                [&nbsp;&nbsp;&nbsp;Our services&nbsp;&nbsp;&nbsp;]
+                Our services
               </div>
               <h2
                 style={{
@@ -258,7 +281,7 @@ export default function HomePage() {
                       fontWeight: 700
                     }}
                   >
-                    [&nbsp;{svc.tag}&nbsp;]
+                    {svc.tag}
                   </div>
                   <h3
                     style={{
@@ -283,28 +306,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 4. TESTIMONIAL LAYOUT ONE */}
-      <section className="testimonial-layout-one" style={{ padding: "4rem 4rem" }}>
-        <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
-          <div style={{ textAlign: "center", marginBottom: "2rem" }}>
-            <h2
-              style={{
-                fontFamily: "var(--font--heading-font)",
-                fontSize: "0.875rem",
-                letterSpacing: "0.1em",
-                textTransform: "uppercase",
-                color: "var(--color--darkest)",
-                margin: 0,
-                fontWeight: 700
-              }}
-            >
-              [&nbsp;&nbsp;&nbsp;Testimonials&nbsp;&nbsp;&nbsp;]
-            </h2>
-          </div>
-          <TestimonialSlider />
-        </div>
-      </section>
-
       {/* 5. TEXT LAYOUT TWO (Company Values) */}
       <section className="text-layout-two" style={{ padding: "6rem 4rem" }}>
         <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
@@ -320,7 +321,7 @@ export default function HomePage() {
                 fontWeight: 700
               }}
             >
-              [&nbsp;&nbsp;&nbsp;&nbsp;Our Values&nbsp;&nbsp;&nbsp;&nbsp;]
+              Our Values &amp; Standards
             </h2>
             <h3
               style={{
@@ -331,7 +332,7 @@ export default function HomePage() {
                 margin: 0
               }}
             >
-              The principles behind every cut
+              Engineered for Precision, Speed, and Tender Compliance
             </h3>
           </div>
 
@@ -399,7 +400,7 @@ export default function HomePage() {
                   fontWeight: 700
                 }}
               >
-                [&nbsp;&nbsp;&nbsp;Our Work&nbsp;&nbsp;&nbsp;]
+                Our Work
               </div>
               <h2
                 style={{
@@ -446,18 +447,35 @@ export default function HomePage() {
                   />
                 </div>
                 <div style={{ padding: "2rem" }}>
-                  <div
-                    style={{
-                      fontFamily: "var(--font--heading-font)",
-                      fontSize: "0.75rem",
-                      textTransform: "uppercase",
-                      letterSpacing: "0.1em",
-                      color: "var(--color--dark, #89684f)",
-                      marginBottom: "0.5rem",
-                      fontWeight: 700
-                    }}
-                  >
-                    [&nbsp;{proj.tag}&nbsp;]
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "0.5rem" }}>
+                    <div
+                      style={{
+                        fontFamily: "var(--font--heading-font)",
+                        fontSize: "0.75rem",
+                        textTransform: "uppercase",
+                        letterSpacing: "0.1em",
+                        color: "var(--color--dark, #89684f)",
+                        fontWeight: 700
+                      }}
+                    >
+                      {proj.tag}
+                    </div>
+                    {proj.trades && (
+                      <span
+                        style={{
+                          fontSize: "0.6875rem",
+                          fontWeight: 700,
+                          textTransform: "uppercase",
+                          letterSpacing: "0.08em",
+                          backgroundColor: "var(--color--darkest)",
+                          color: "var(--color--lightest)",
+                          padding: "0.2rem 0.5rem",
+                          borderRadius: "4px"
+                        }}
+                      >
+                        Turnkey Scope
+                      </span>
+                    )}
                   </div>
                   <h3
                     style={{

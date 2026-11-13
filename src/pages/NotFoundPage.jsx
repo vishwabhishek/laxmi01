@@ -33,7 +33,7 @@ export default function NotFoundPage() {
             fontWeight: 700
           }}
         >
-          [&nbsp;&nbsp;&nbsp;Error&nbsp;&nbsp;&nbsp;]
+          Error
         </div>
         <h1
           style={{
