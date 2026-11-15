@@ -13,20 +13,19 @@
 | `/` | **Home** (`home`) | Homepage | 9 | 20 | Hero Parallax, Testimonial Slider, Hover Cards |
 | `/about` | **About Us** (`about`) | About | 9 | 12 | Team Grid, Craftsmanship Story, Process Steps |
 | `/services` | **Services Directory** (`services`) | Index / Listing | 8 | 11 | Number Counter, Category Grid, FAQ Accordion |
-| `/services/kitchens` | **Service: Kitchens** (`service_kitchens`) | Service Detail | 8 | 7 | Materials Spec, Gallery, FAQ, Inquiry CTA |
-| `/services/bathrooms` | **Service: Bathrooms** (`service_bathrooms`) | Service Detail | 8 | 7 | Moisture-Proof Joinery, Gallery, FAQ, CTA |
-| `/services/furniture` | **Service: Furniture** (`service_furniture`) | Service Detail | 8 | 7 | Custom Joinery, Gallery, FAQ, CTA |
-| `/services/flooring` | **Service: Flooring** (`service_flooring`) | Service Detail | 8 | 7 | Hardwood Specs, Gallery, FAQ, CTA |
-| `/services/buildings` | **Service: Buildings** (`service_buildings`) | Service Detail | 8 | 7 | Timber Outbuildings, Gallery, FAQ, CTA |
+| `/services/turnkey-interiors` | **Service: Turnkey Interiors** (`service_turnkey-interiors`) | Service Detail | 8 | 7 | Materials Spec, Gallery, FAQ, Inquiry CTA |
+| `/services/hospitality-healthcare` | **Service: Hospitality & Healthcare** (`service_hospitality-healthcare`) | Service Detail | 8 | 7 | Moisture-Proof Joinery, Gallery, FAQ, CTA |
+| `/services/joinery-furnishings` | **Service: Architectural Joinery & Furnishings** (`service_joinery_furnishings`) | Service Detail | 8 | 7 | Custom Joinery, Gallery, FAQ, CTA |
+| `/services/acoustics-partitions` | **Service: Acoustic Panelling & Partitions** (`service_acoustics_partitions`) | Service Detail | 8 | 7 | Hardwood Specs, Gallery, FAQ, CTA |
+| `/services/workstations-facilities` | **Service: Workstations & Critical Facilities** (`service_workstations_facilities`) | Service Detail | 8 | 7 | Workstations, Gallery, FAQ, CTA |
 | `/portfolio` | **Portfolio Directory** (`portfolio`) | Portfolio Listing | 7 | 8 | Project Card Zoom, Filterable Grid, Quote Card |
-| `/projects/light-pine-kitchen` | **Project: Light Pine Kitchen** (`project_light_pine_kitchen`) | Project Detail | 4 | 7 | Full-Bleed Gallery, Project Metadata, Quote CTA |
-| `/projects/airy-apartment` | **Project: Airy Apartment** (`project_airy_apartment`) | Project Detail | 4 | 7 | Architectural Case Study, Specs, Gallery |
-| `/projects/modern-kitchen` | **Project: Modern Kitchen** (`project_modern_kitchen`) | Project Detail | 4 | 7 | Contemporary Joinery Showcase, Gallery |
-| `/projects/hamptons-manor-house` | **Project: Hamptons Manor House** (`project_hamptons_manor_house`) | Project Detail | 4 | 7 | Heritage Restoration Showcase, Gallery |
-| `/projects/dark-oak-kitchen` | **Project: Dark Oak Kitchen** (`project_dark_oak_kitchen`) | Project Detail | 4 | 7 | Rich Espresso Timber Showcase, Gallery |
+| `/projects/4life-andheri` | **Project: 4Life Corporate Office & Healthcare Facility** (`project_4life_andheri`) | Project Detail | 4 | 7 | Turnkey Corporate Fit-Out, Specs, Gallery |
+| `/projects/boardroom-conference-suites` | **Project: Corporate Boardroom & Conference Suites** (`project_boardroom_conference_suites`) | Project Detail | 4 | 7 | Full-Bleed Gallery, Project Metadata, Quote CTA |
+| `/projects/acoustic-panelling-partitions` | **Project: Acoustic Panelling & Demountable Partitions** (`project_acoustic_panelling_partitions`) | Project Detail | 4 | 7 | Architectural Case Study, Specs, Gallery |
+| `/projects/reception-lobby-displays` | **Project: Reception Lobby & Brand Displays** (`project_reception_lobby_displays`) | Project Detail | 4 | 7 | Contemporary Joinery Showcase, Gallery |
+| `/projects/executive-director-cabins` | **Project: Executive Director Cabins & Veneer Joinery** (`project_executive_director_cabins`) | Project Detail | 4 | 7 | Executive Joinery Showcase, Gallery |
+| `/projects/modular-workstation-deployment` | **Project: Modular Workstation Deployment** (`project_modular_workstation_deployment`) | Project Detail | 4 | 7 | Modular Workstations Showcase, Gallery |
 | `/contact` | **Contact & Quote** (`contact`) | Contact / Form | 4 | 4 | Multi-field Inquiry Form, Validation, FAQ |
-| `/template-help/licences` | **Licensing** (`template_licences`) | Documentation | 3 | 2 | Asset Attributions, Unsplash/Pexels Links |
-| `/template-help/changelog` | **Changelog** (`template_changelog`) | Documentation | 3 | 2 | Release Versions, Template History |
 | `/404` | **Not Found** (`404`) | Utility | 2 | 2 | Error Illustration, Return Home CTA |
 | `/401` | **Protected Page** (`401`) | Utility | 0 | 0 | Password Input Form, Authentication Gate |
 
@@ -86,7 +85,7 @@
 - **Slug**: `services`
 - **Primary Headings**:
   - H1: `[ Woodworking, Joinery & Carpentry Services ]`
-  - H2: `Our Services`, `[ Our work in numbers ]`, `Kitchens`, `Bathrooms`, `Furniture`, `Flooring`, `Buildings`
+  - H2: `Our Services`, `[ Our work in numbers ]`, `Turnkey Interiors`, `Hospitality & Healthcare`, `Furniture`, `Flooring`, `Buildings`
 - **Section Sequence**:
   1. `header`: Fixed floating navigation header.
   2. `hero-layout-three`: Minimalist header breadcrumb and title banner.
@@ -104,11 +103,11 @@
 ---
 
 ### 2.4 Service Detail Pages (5 Routes)
-1. `/services/kitchens` (Kitchen Joinery & Custom Cabinetry)
-2. `/services/bathrooms` (Luxury Wooden Vanities & Bathroom Elements)
-3. `/services/furniture` (Bespoke Dining, Desks, and Storage Furniture)
-4. `/services/flooring` (Solid Hardwood, Parquet & Engineered Timber)
-5. `/services/buildings` (Garden Studios, Timber Framing & Pergolas)
+1. `/services/turnkey-interiors` (Commercial Turnkey Fit-Outs & Civil Reconfiguration)
+2. `/services/hospitality-healthcare` (Hospitality & Healthcare Fit-Outs)
+3. `/services/joinery-furnishings` (Architectural Joinery & Custom Furnishings)
+4. `/services/acoustics-partitions` (Acoustic Panelling, Demountable Partitions & Flooring)
+5. `/services/workstations-facilities` (Modular Workstations & Critical Facilities)
 
 - **Common Structural Blueprint (8 Sections)**:
   1. `header`: Floating navigation header.
@@ -120,8 +119,8 @@
   7. `cta-layout-three`: Custom consultation call-to-action tailored to the service.
   8. `footer`: Standard site footer.
 - **Visual Artifacts**:
-  - Kitchens: `audit_tools/screenshots/desktop/service_kitchens_full.png`
-  - Bathrooms: `audit_tools/screenshots/desktop/service_bathrooms_full.png`
+  - Turnkey Interiors: `audit_tools/screenshots/desktop/service_turnkey-interiors_full.png`
+  - Hospitality & Healthcare: `audit_tools/screenshots/desktop/service_hospitality-healthcare_full.png`
   - Furniture: `audit_tools/screenshots/desktop/service_furniture_full.png`
   - Flooring: `audit_tools/screenshots/desktop/service_flooring_full.png`
   - Buildings: `audit_tools/screenshots/desktop/service_buildings_full.png`
@@ -150,11 +149,11 @@
 ---
 
 ### 2.6 Project Detail Pages (5 Routes)
-1. `/projects/light-pine-kitchen`
-2. `/projects/airy-apartment`
-3. `/projects/modern-kitchen`
-4. `/projects/hamptons-manor-house`
-5. `/projects/dark-oak-kitchen`
+1. `/projects/boardroom-conference-suites`
+2. `/projects/acoustic-panelling-partitions`
+3. `/projects/reception-lobby-displays`
+4. `/projects/executive-director-cabins`
+5. `/projects/modular-workstation-deployment`
 
 - **Common Structural Blueprint (4 Sections)**:
   1. `header`: Floating navigation header.
@@ -166,11 +165,12 @@
   3. `cta-layout-one`: Consultation CTA with headline "Enquire now for a free quote".
   4. `footer`: Standard site footer.
 - **Visual Artifacts**:
-  - Light Pine: `audit_tools/screenshots/desktop/project_light_pine_kitchen_full.png`
-  - Airy Apartment: `audit_tools/screenshots/desktop/project_airy_apartment_full.png`
-  - Modern Kitchen: `audit_tools/screenshots/desktop/project_modern_kitchen_full.png`
-  - Hamptons Manor: `audit_tools/screenshots/desktop/project_hamptons_manor_house_full.png`
-  - Dark Oak: `audit_tools/screenshots/desktop/project_dark_oak_kitchen_full.png`
+  - 4Life Corporate Office: `audit_tools/screenshots/desktop/project_4life_andheri_full.png`
+  - Boardroom & Conference Suites: `audit_tools/screenshots/desktop/project_boardroom_conference_suites_full.png`
+  - Acoustic Panelling & Demountable Partitions: `audit_tools/screenshots/desktop/project_acoustic_panelling_partitions_full.png`
+  - Reception Lobby & Brand Displays: `audit_tools/screenshots/desktop/project_reception_lobby_displays_full.png`
+  - Executive Director Cabins: `audit_tools/screenshots/desktop/project_executive_director_cabins_full.png`
+  - Modular Workstation Deployment: `audit_tools/screenshots/desktop/project_modular_workstation_deployment_full.png`
 
 ---
 
@@ -179,7 +179,7 @@
 - **Slug**: `contact`
 - **Primary Headings**:
   - H1: `[ Get in touch ]`
-  - H2: `Contact us for a free quote or consultation`, `Looking for some answers?`
+  - H2: `Contact us for a free quote or consultation`, `FAQs`
 - **Section Sequence**:
   1. `header`: Floating navigation header.
   2. `hero-layout-four`: Split layout:
@@ -194,13 +194,9 @@
 
 ---
 
-### 2.8 Documentation & Utility Pages
-1. `/template-help/licences`: Image and typography licensing attributions.
-2. `/template-help/changelog`: Version history and template release records.
-3. `/404`: Custom 404 page with woodworked styling and "Back to Home" button.
-4. `/401`: Protected page view with password authentication field.
+### 2.8 Utility Pages
+1. `/404`: Custom 404 page with Laxmi Enterprises styling and "Return Home" / "Get a Quote" buttons.
+2. `/401`: Protected page view with password authentication field.
 - **Visual Artifacts**:
-  - Licences: `audit_tools/screenshots/desktop/template_licences_full.png`
-  - Changelog: `audit_tools/screenshots/desktop/template_changelog_full.png`
   - 404: `audit_tools/screenshots/desktop/404_full.png`
   - 401: `audit_tools/screenshots/desktop/401_full.png`

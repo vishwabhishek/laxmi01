@@ -100,11 +100,11 @@ Please confirm or replace the 4 key strengths of Laxmi Enterprises:
 
 ### Decision: How should the 5 Services be structured?
 *Current Template Pages:*
-1. `/services/kitchens`
-2. `/services/bathrooms`
-3. `/services/furniture`
-4. `/services/flooring`
-5. `/services/buildings`
+1. `/services/turnkey-interiors`
+2. `/services/hospitality-healthcare`
+3. `/services/joinery-furnishings`
+4. `/services/acoustics-partitions`
+5. `/services/workstations-facilities`
 
 *Choose Option A (Commercial B2B Focus) or Option B (Keep Template Categories):*
 * **Option A (Commercial B2B Contracting):**
@@ -113,7 +113,7 @@ Please confirm or replace the 4 key strengths of Laxmi Enterprises:
   3. Custom Joinery, Panelling & Partitions
   4. Commercial Flooring & Surface Finishes
   5. On-Site Carpentry & Structural Woodwork
-* **Option B (Original Template Names):** Kitchens, Bathrooms, Furniture, Flooring, Buildings.
+* **Option B (Original Template Names):** Turnkey Interiors, Hospitality & Healthcare, Furniture, Flooring, Buildings.
 * **Your Selection:** `[Option A / Option B / Custom list: ____________________]`
 
 ---
@@ -206,7 +206,7 @@ Please confirm or tailor these 4 execution steps:
 ---
 
 ## 7. PROJECTS & PORTFOLIO CASE STUDIES
-*(The template currently has 5 generic projects: "Light Pine Kitchen", "Airy Apartment", "Modern Kitchen", "Hamptons Manor House", "Dark Oak Kitchen")*
+*(The template currently has 5 generic projects: "Corporate Boardroom & Conference Suites", "Acoustic Panelling & Demountable Partitions", "Reception Lobby & Brand Displays", "Executive Director Cabins & Veneer Joinery", "Modular Workstation Deployment")*
 
 Please provide 5 real or representative projects you have executed:
 
@@ -250,7 +250,7 @@ Please provide 5 real or representative projects you have executed:
 ---
 
 ## 8. CLIENT TESTIMONIALS & ENDORSEMENTS
-*(Currently placeholder: "Woodworked absolutely smashed it out of the park... — Mark Evans, Kitchen Project")*
+*(Currently placeholder: "Laxmi Enterprises delivered our corporate fit-out on schedule... — Commercial Project Director")*
 
 Please provide 2 to 4 statements from contractors, project managers, architects, or clients:
 

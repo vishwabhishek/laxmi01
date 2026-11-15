@@ -13,20 +13,21 @@ export default function ServicesPage() {
       <section className="hero-layout-three" style={{ padding: "10rem 4rem 4rem" }}>
         <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
           <div style={{ marginBottom: "1rem" }}>
-            <span
+            <h1
               style={{
                 fontFamily: "var(--font--heading-font)",
                 fontSize: "0.875rem",
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
                 color: "var(--color--darkest)",
-                fontWeight: 700
+                fontWeight: 700,
+                margin: 0
               }}
             >
-              Turnkey Interior Contracting &amp; Specialized Millwork
-            </span>
+              Commercial Fit-Outs &amp; Specialist Joinery
+            </h1>
           </div>
-          <h1
+          <h2
             style={{
               fontFamily: "var(--font--heading-font)",
               fontSize: "clamp(2.5rem, 5vw, 4.25rem)",
@@ -36,8 +37,8 @@ export default function ServicesPage() {
               color: "var(--color--darkest)"
             }}
           >
-            Our Core Services &amp; Capabilities
-          </h1>
+            Services
+          </h2>
           <p style={{ maxWidth: "750px", fontSize: "1.125rem", lineHeight: "1.75", color: "var(--color--darkest)", margin: 0 }}>
             Full-scope turnkey interior contracting, architectural joinery, acoustic wall and ceiling systems, and modular workstation deployments for corporate headquarters, BFSI institutions, data centres, and hospitality facilities.
           </p>

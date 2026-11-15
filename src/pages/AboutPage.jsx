@@ -7,22 +7,22 @@ export default function AboutPage() {
     {
       num: "01",
       title: "Drawing & BOQ Study",
-      desc: "Thorough analysis of architectural AutoCAD/Revit plans, joinery elevations, hardware specifications, and Bill of Quantities to identify site-level feasibility and value-engineering opportunities."
+      desc: "Review of plans, joinery elevations, hardware specifications and BOQ to confirm site feasibility"
     },
     {
       num: "02",
       title: "Site Survey & Verification",
-      desc: "Precise laser measurements across site finished levels, wall plumbness, and service conduit clearances, followed by deployment of verified carpenters and core tooling."
+      desc: "Laser measurement of finished levels, then rapid deployment of verified carpenters and tooling"
     },
     {
       num: "03",
-      title: "Precision Execution & Supervision",
-      desc: "Hands-on daily supervision by our Founder & Principal Supervisor, enforcing rigid schedule milestones, drawing adherence, edge-banding tolerances, and clean joinery finishes."
+      title: "Execution & Supervision",
+      desc: "Daily supervision by our founder, enforcing milestones and joinery tolerances"
     },
     {
       num: "04",
-      title: "Snag Inspection & Handover",
-      desc: "Joint snag-list audit alongside project managers, architects, and main contractors, clearing micro-defects prior to formal client sign-off and on-time project handover."
+      title: "Snag Audit & Handover",
+      desc: "Joint snag audit with project managers and main contractors; defects cleared before handover."
     }
   ];
 
@@ -32,18 +32,19 @@ export default function AboutPage() {
       <section className="hero-layout-two" style={{ padding: "10rem 4rem 5rem" }}>
         <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
           <div style={{ marginBottom: "1rem" }}>
-            <span
+            <h1
               style={{
                 fontFamily: "var(--font--heading-font)",
                 fontSize: "0.875rem",
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
                 color: "var(--color--darkest)",
-                fontWeight: 700
+                fontWeight: 700,
+                margin: 0
               }}
             >
-              Company Overview &amp; Capabilities
-            </span>
+              About Us
+            </h1>
           </div>
 
           <div
@@ -55,7 +56,7 @@ export default function AboutPage() {
             }}
           >
             <div>
-              <h1
+              <h2
                 style={{
                   fontFamily: "var(--font--heading-font)",
                   fontSize: "clamp(2.5rem, 5vw, 4rem)",
@@ -66,13 +67,12 @@ export default function AboutPage() {
                   color: "var(--color--darkest)"
                 }}
               >
-                Commercial Interior Fit-Out &amp; Joinery Excellence
-              </h1>
+                Company Overview
+              </h2>
               <p style={{ fontSize: "1.125rem", lineHeight: "1.8", color: "var(--color--darkest)", margin: "0 0 2rem" }}>
-                Backed by over 25 years of hands-on site leadership, Laxmi Enterprises executes turnkey commercial interior fit-outs, bulk modular workstation deployments, and bespoke architectural joinery across Mumbai and pan-India.
-              </p>
+                With 25+ years of hands-on site leadership, Laxmi Enterprises delivers commercial fit-outs, bulk modular furniture installation and bespoke architectural joinery across Mumbai and pan-India.</p>
               <PrimaryButton to="/contact" variant="darkest">
-                Request Tender Consultation
+                Get a Quote
               </PrimaryButton>
             </div>
 
@@ -84,6 +84,44 @@ export default function AboutPage() {
               />
             </div>
           </div>
+
+          <div
+            style={{
+              marginTop: "4rem",
+              paddingTop: "3rem",
+              borderTop: "1px solid var(--color--light, #eed5b9)",
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+              gap: "3rem",
+              alignItems: "center"
+            }}
+          >
+            <div>
+              <h3
+                style={{
+                  fontFamily: "var(--font--heading-font)",
+                  fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.04em",
+                  margin: "0 0 1rem",
+                  color: "var(--color--darkest)"
+                }}
+              >
+                What We Deliver
+              </h3>
+              <p style={{ fontSize: "1.0625rem", lineHeight: "1.75", color: "var(--color--darkest)", margin: "0 0 1.5rem" }}>
+                From high-density workstations and boardroom tables to residential wardrobes and acoustic panelling, our crews deliver precision across every project format.
+              </p>
+              <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+                <PrimaryButton to="/services" variant="darkest">
+                  View All Services
+                </PrimaryButton>
+                <PrimaryButton to="/contact" variant="darkest">
+                  Contact Us
+                </PrimaryButton>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -91,18 +129,19 @@ export default function AboutPage() {
       <section className="text-layout-three" style={{ padding: "5rem 4rem" }}>
         <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
           <div style={{ marginBottom: "1rem" }}>
-            <span
+            <h2
               style={{
                 fontFamily: "var(--font--heading-font)",
                 fontSize: "0.875rem",
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
                 color: "var(--color--darkest)",
-                fontWeight: 700
+                fontWeight: 700,
+                margin: 0
               }}
             >
               Enterprise Background
-            </span>
+            </h2>
           </div>
 
           <div
@@ -113,7 +152,7 @@ export default function AboutPage() {
               alignItems: "baseline"
             }}
           >
-            <h2
+            <h3
               style={{
                 fontFamily: "var(--font--heading-font)",
                 fontSize: "clamp(2rem, 3.5vw, 3rem)",
@@ -124,14 +163,11 @@ export default function AboutPage() {
                 color: "var(--color--darkest)"
               }}
             >
-              Over 25 Years of Contracting Excellence &amp; Field Leadership
-            </h2>
+              25+ Years of Field Leadership
+            </h3>
             <div style={{ display: "flex", flexDirection: "column", gap: "1.5rem", fontSize: "1.0625rem", lineHeight: "1.75" }}>
               <p style={{ margin: 0 }}>
-                Founded and directed by a veteran project supervisor with over two decades of practical contracting experience across major commercial headquarters, IT data centres, luxury hotels, and institutional facilities.
-              </p>
-              <p style={{ margin: 0 }}>
-                We bridge the critical gap between architectural design intent and on-site reality—deploying a dedicated workforce of 16–30+ skilled tradesmen with zero tolerance for drawing deviations, safety compromises, or schedule slippages.
+                Founded and led by a master supervisor with 20+ years of contracting experience across commercial, institutional and residential sites. We bridge design and site reality, managing 16–30+ skilled tradesmen with strict control over drawing deviations, safety and deadlines.
               </p>
             </div>
           </div>
@@ -192,7 +228,7 @@ export default function AboutPage() {
                 margin: 0
               }}
             >
-              From Blueprint &amp; BOQ to Snag-Free Handover
+              Our Process
             </h2>
           </div>
 
@@ -316,12 +352,39 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* OUR WORK SECTION */}
+      <section className="text-layout-five" style={{ padding: "6rem 4rem" }}>
+        <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
+          <div style={{ marginBottom: "1.5rem" }}>
+            <h2
+              style={{
+                fontFamily: "var(--font--heading-font)",
+                fontSize: "clamp(2rem, 3.5vw, 3rem)",
+                textTransform: "uppercase",
+                letterSpacing: "0.05em",
+                margin: 0,
+                color: "var(--color--darkest)"
+              }}
+            >
+              Our Work
+            </h2>
+          </div>
+          <p style={{ maxWidth: "700px", fontSize: "1.125rem", lineHeight: "1.75", color: "var(--color--darkest)", marginBottom: "2rem" }}>
+            Completed fit-outs, workstation installations, acoustic panelling and bespoke cabinetry across corporate and residential spaces
+          </p>
+          <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap" }}>
+            <PrimaryButton to="/services" variant="darkest">
+              View All Services
+            </PrimaryButton>
+            <PrimaryButton to="/contact" variant="darkest">
+              Contact Us
+            </PrimaryButton>
+          </div>
+        </div>
+      </section>
+
       {/* 6. CTA BANNER */}
-      <CtaBanner
-        title="Ready to partner on your upcoming fit-out project?"
-        subtitle="Submit your tender packages, architectural shop drawings, or Bill of Quantities (BOQ) for an comprehensive execution proposal and project delivery schedule."
-        buttonText="Get a Quote"
-      />
+      <CtaBanner />
     </main>
   );
 }

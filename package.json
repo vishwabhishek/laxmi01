@@ -1,12 +1,13 @@
 {
-  "name": "woodworked-site",
+  "name": "laxmi-enterprises-site",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node tests/e2e/runner.js"
   },
   "dependencies": {
     "react": "^19.0.0",

@@ -60,7 +60,7 @@ export default function Footer() {
               </div>
             </Link>
             <p style={{ color: "var(--color--light, #eed5b9)", fontSize: "0.9375rem", lineHeight: "1.7", maxWidth: "340px", marginBottom: "2rem" }}>
-              Turnkey interior fit-out contracting, custom architectural joinery, modular workstation deployments, and corporate interior execution backed by over 25 years of field trade mastery.
+              Planning a commercial project? Share your drawings or BOQ.
             </p>
             <div style={{ display: "flex", gap: "1rem" }}>
               <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" style={{ color: "var(--color--lightest)" }} aria-label="Facebook">
@@ -95,11 +95,11 @@ export default function Footer() {
               Services
             </h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "0.875rem" }}>
-              <li><Link to="/services/kitchens" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Turnkey Interior Contracting &amp; Commercial Fit-Outs</Link></li>
-              <li><Link to="/services/bathrooms" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Hospitality, Healthcare &amp; Institutional Fit-Outs</Link></li>
-              <li><Link to="/services/furniture" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Architectural Joinery, Executive Millwork &amp; Custom Furnishings</Link></li>
-              <li><Link to="/services/flooring" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Acoustic Panelling, Demountable Partitions &amp; Ceilings</Link></li>
-              <li><Link to="/services/buildings" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Modular Workstations &amp; Mission-Critical Facilities</Link></li>
+              <li><Link to="/services/turnkey-interiors" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Turnkey Interiors &amp; Fit-Outs</Link></li>
+              <li><Link to="/services/hospitality-healthcare" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Hospitality &amp; Healthcare Fit-Outs</Link></li>
+              <li><Link to="/services/joinery-furnishings" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Architectural Joinery &amp; Furnishings</Link></li>
+              <li><Link to="/services/acoustics-partitions" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Acoustic Panelling &amp; Partitions</Link></li>
+              <li><Link to="/services/workstations-facilities" style={{ color: "var(--color--lightest)", textDecoration: "none", fontSize: "0.9375rem" }}>Workstations &amp; Critical Facilities</Link></li>
             </ul>
           </div>
         </div>

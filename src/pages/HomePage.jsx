@@ -78,7 +78,7 @@ export default function HomePage() {
                   fontWeight: 700
                 }}
               >
-                TURNKEY INTERIOR FIT-OUT &amp; ARCHITECTURAL JOINERY AT SCALE
+                Turnkey Interior Fit-Outs &amp; Architectural Joinery
               </h1>
               <p
                 style={{
@@ -90,11 +90,10 @@ export default function HomePage() {
                   maxWidth: "680px"
                 }}
               >
-                Backed by 20–30 years of hands-on supervisory and trade leadership, Laxmi Enterprises executes comprehensive turnkey interior fit-outs, custom architectural joinery, modular workstation deployments, and corporate interior contracting for main EPC contractors, PMCs, corporate enterprises, and developers.
-              </p>
+                25+ years of site leadership delivering turnkey fit-outs, architectural joinery and modular workstations for EPC contractors, PMCs, corporates and developers.</p>
               <div>
                 <PrimaryButton to="/contact" variant="lightest" style={{ padding: "0.875rem 2rem", fontSize: "0.9375rem" }}>
-                  GET A QUOTE
+                  Get a Quote
                 </PrimaryButton>
               </div>
             </div>
@@ -131,7 +130,7 @@ export default function HomePage() {
                 <span style={{ fontSize: "1.25rem" }}>↗</span>
               </div>
               <div style={{ fontSize: "1.125rem", fontWeight: 700, lineHeight: "1.3", color: "var(--color--darkest)" }}>
-                Engineered for Commercial &amp; Institutional Scale
+                Led on-site by our Founder &amp; Principal Supervisor.
               </div>
               <p style={{ margin: 0, fontSize: "0.875rem", lineHeight: "1.5", color: "#5c4a3e" }}>
                 GST-registered commercial interior contractor with active pan-India deployment. 16–30 deployable trade-certified craftsmen on call, scalable to 50–100+ tradesmen, with proven delivery across Data Centres, BFSI Facilities, Corporate Headquarters, and Luxury Hospitality projects.
@@ -156,11 +155,11 @@ export default function HomePage() {
                 fontWeight: 700
               }}
             >
-              Corporate Profile &amp; Capabilities
+              Company Profile
             </h2>
             <img
               src="/assets/668d3a4363eab755ea4d62c5_Vector.svg"
-              alt="Woodworked Seal"
+              alt="Laxmi Enterprises Seal"
               style={{ width: "64px", height: "64px" }}
             />
           </div>
@@ -177,7 +176,7 @@ export default function HomePage() {
                 color: "var(--color--darkest)"
               }}
             >
-              Over 25 Years of Proven Field Contracting Leadership
+              25+ Years of Site Leadership
             </h3>
             <div
               className="divider-line background-accent"
@@ -194,11 +193,9 @@ export default function HomePage() {
               }}
             >
               <p style={{ margin: 0 }}>
-                Founded and directed by a veteran trade supervisor with over two decades of practical on-site contracting experience, Laxmi Enterprises executes turnkey commercial interior fit-outs, high-volume modular workstation installations, and bespoke architectural millwork.
-              </p>
+                Founded and led by a veteran trade supervisor, Laxmi Enterprises delivers turnkey interiors, modular workstations and bespoke millwork across Mumbai and pan-India, on schedule and to drawing.</p>
               <p style={{ margin: 0 }}>
-                Led on-site by our Founder &amp; Principal Supervisor, our dedicated force of 16–30+ skilled craftsmen delivers projects across Mumbai and pan-India with rigorous schedule governance, strict GFC drawing compliance, and zero-defect QA/QC standards.
-              </p>
+                GST-registered · Mumbai-based · Pan-India deployment · 16–30 skilled workers on call, scalable · Delivered across data centres, corporate offices, hotels and institutional projects</p>
             </div>
           </div>
         </div>
@@ -209,19 +206,6 @@ export default function HomePage() {
         <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "3.5rem" }}>
             <div>
-              <div
-                style={{
-                  fontFamily: "var(--font--heading-font)",
-                  fontSize: "0.875rem",
-                  letterSpacing: "0.1em",
-                  textTransform: "uppercase",
-                  color: "var(--color--darkest)",
-                  marginBottom: "0.75rem",
-                  fontWeight: 700
-                }}
-              >
-                Our services
-              </div>
               <h2
                 style={{
                   fontFamily: "var(--font--heading-font)",
@@ -231,7 +215,7 @@ export default function HomePage() {
                   margin: 0
                 }}
               >
-                View all our services
+                Services
               </h2>
             </div>
             <PrimaryButton to="/services" variant="darkest">
@@ -321,7 +305,7 @@ export default function HomePage() {
                 fontWeight: 700
               }}
             >
-              Our Values &amp; Standards
+              Our Approach
             </h2>
             <h3
               style={{
@@ -332,7 +316,7 @@ export default function HomePage() {
                 margin: 0
               }}
             >
-              Engineered for Precision, Speed, and Tender Compliance
+              Precision, Speed, Compliance
             </h3>
           </div>
 
@@ -389,30 +373,30 @@ export default function HomePage() {
         <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", marginBottom: "3.5rem" }}>
             <div>
-              <div
+              <h2
                 style={{
                   fontFamily: "var(--font--heading-font)",
                   fontSize: "0.875rem",
                   letterSpacing: "0.1em",
                   textTransform: "uppercase",
                   color: "var(--color--darkest)",
-                  marginBottom: "0.75rem",
-                  fontWeight: 700
+                  fontWeight: 700,
+                  margin: 0
                 }}
               >
-                Our Work
-              </div>
-              <h2
+                Portfolio
+              </h2>
+              <h3
                 style={{
                   fontFamily: "var(--font--heading-font)",
                   fontSize: "clamp(2rem, 3.5vw, 3rem)",
                   textTransform: "uppercase",
                   letterSpacing: "0.05em",
-                  margin: 0
+                  margin: "0.75rem 0 0"
                 }}
               >
-                Featured architectural projects
-              </h2>
+                Our Work
+              </h3>
             </div>
             <PrimaryButton to="/portfolio" variant="darkest">
               View Portfolio

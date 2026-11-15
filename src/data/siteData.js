@@ -1,13 +1,22 @@
 // Master Site Data Store for Laxmi Enterprises Application
 export const services = [
   {
-    "id": "kitchens",
-    "slug": "kitchens",
-    "title": "Turnkey Interior Contracting & Commercial Fit-Outs",
-    "tag": "Turnkey Contracting",
-    "summary": "End-to-end commercial interior execution, civil reconfiguration, and MEP interface management",
-    "description": "Full-scope turnkey interior contracting covering architectural plywood joinery, partition restructuring, drywall ceiling grids, conduit electrical distribution, plumbing lines, and complete civil handover for corporate offices and commercial facilities.",
+    "id": "turnkey-interiors",
+    "slug": "turnkey-interiors",
+    "title": "Turnkey Interiors & Fit-Outs",
+    "tag": "Turnkey Fit-Outs",
+    "summary": "End-to-end interior contracting (joinery, civil, electrical, plumbing and handover) for offices and commercial facilities.",
+    "description": "Single-point contracting across architectural joinery, civil reconfiguration, drywall partitions, electrical, plumbing and handover for corporate headquarters and commercial facilities.",
+    "subheading": "End-to-end interior execution, from drawings to handover",
     "heroImage": "/assets/4life/WA0021.webp",
+    "capabilities": [
+      { "num": "01", "title": "Architectural Joinery", "desc": "BWP/BWR plywood construction with no hollow cavities, built for heavy loads and humidity" },
+      { "num": "02", "title": "Civil & Partitions", "desc": "Demolition, space reconfiguration and acoustic drywall partitions" },
+      { "num": "03", "title": "Electrical & Lighting", "desc": "Conduit wiring, lighting, power and data cabling" },
+      { "num": "04", "title": "Plumbing & MEP Coordination", "desc": "Pantry plumbing and sanitary lines, coordinated with HVAC and fire services" },
+      { "num": "05", "title": "Finishes & Hardware", "desc": "Veneer, laminate and PU finishes; Blum, Hettich, Hafele and Ebco hardware" },
+      { "num": "06", "title": "Laser-Level Precision", "desc": "Laser plumb checks during installation for smooth, rattle-free performance" }
+    ],
     "gallery": [
       "/assets/4life/WA0021.webp",
       "/assets/4life/WA0053.webp",
@@ -16,13 +25,22 @@ export const services = [
     ]
   },
   {
-    "id": "bathrooms",
-    "slug": "bathrooms",
-    "title": "Hospitality, Healthcare & Institutional Fit-Outs",
-    "tag": "Specialized Fit-Outs",
-    "summary": "High-traffic interior fit-outs for hospitality suites, dining facilities, and healthcare centres",
-    "description": "Specialized fit-out execution designed for high-density, demanding environments including hotel guestrooms, executive dining facilities, corporate pantries, and medical consultation facilities with durable commercial-grade materials.",
+    "id": "hospitality-healthcare",
+    "slug": "hospitality-healthcare",
+    "title": "Hospitality & Healthcare Fit-Outs",
+    "tag": "Hospitality & Healthcare",
+    "summary": "Hotels, restaurants, retail, banks and institutions, coordinated with MEP and HVAC to meet launch dates.",
+    "description": "Complete interior execution for hotels, restaurants, flagship retail and bank branches, coordinated with MEP, HVAC and project managers to meet launch dates.",
+    "subheading": "Turnkey interiors for hospitality and retail",
     "heroImage": "/assets/6695161351f2fa07d3842571_pexels-heyho-7018822.webp",
+    "capabilities": [
+      { "num": "01", "title": "Turnkey Commercial Interiors", "desc": "Single-point contracting across architectural joinery, partitions, MEP coordination, and floor handover." },
+      { "num": "02", "title": "Retail Fixtures & Display Joinery", "desc": "Millimeter-tolerance retail displays, cash counters, perimeter shelving, and acrylic display vitrines." },
+      { "num": "03", "title": "Guest Room Millwork", "desc": "Hotel wardrobe suites, headboards, luggage benches, and vanity consoles made to architect shop drawings." },
+      { "num": "04", "title": "Moisture-Resistant Vanities", "desc": "High-density moisture-resistant substrates and anti-fungal finishes for hospitality washrooms." },
+      { "num": "05", "title": "Fire-Rated Doors & Frames", "desc": "FD30/FD60 certified commercial timber doors, acoustic vision frames, and concealed drop-seal hardware." },
+      { "num": "06", "title": "Off-Peak & Night-Shift Deployment", "desc": "Flexible multi-shift deployment to execute live retail and hospitality fit-outs without downtime." }
+    ],
     "gallery": [
       "/assets/66968f657e4684f9de38ac8d_pexels-heyho-6284228.webp",
       "/assets/66968f6bacdd554c9b6decad_pexels-heyho-6758534.webp",
@@ -31,13 +49,22 @@ export const services = [
     ]
   },
   {
-    "id": "furniture",
-    "slug": "furniture",
-    "title": "Architectural Joinery, Executive Millwork & Custom Furnishings",
-    "tag": "Architectural Millwork",
-    "summary": "Bespoke executive boardroom suites, reception desks, and natural veneer cabinetry",
-    "description": "Precision architectural woodwork built strictly to GFC (Good For Construction) drawings. Specializing in bookmatched natural veneer panelling, curved reception counters, 20-seater boardroom tables with integrated AV raceways, and custom credenzas.",
+    "id": "joinery-furnishings",
+    "slug": "joinery-furnishings",
+    "title": "Architectural Joinery & Furnishings",
+    "tag": "Architectural Joinery",
+    "summary": "Reception desks, boardroom tables, timber panelling and specialty woodwork built to architect shop drawings.",
+    "description": "Custom millwork, statement reception desks, conference tables and feature seating, made to architect shop drawings.",
+    "subheading": "Architectural millwork and bespoke timber fabrication",
     "heroImage": "/assets/4life/WA0021.webp",
+    "capabilities": [
+      { "num": "01", "title": "Reception & Concierge Desks", "desc": "Statement front-of-house counters with curved geometry, stone and acrylic inlays, and warm backlighting." },
+      { "num": "02", "title": "Boardroom & Meeting Tables", "desc": "Large-format 10 to 24-seater conference tables with integrated pop-up AV raceways and wire chases." },
+      { "num": "03", "title": "Veneer & Fluted Woodwork", "desc": "Bookmatched natural veneer wall cladding, fluted architectural wall treatments, and solid wood mouldings." },
+      { "num": "04", "title": "Cable Trays & Power Raceways", "desc": "Internal steel sub-framing and concealed cable chases providing completely wire-free executive surfaces." },
+      { "num": "05", "title": "Metal, Glass & Acrylic Inlays", "desc": "High-tolerance interface of dissimilar materials—brass trims, fluted glass, and mirror-finished acrylic." },
+      { "num": "06", "title": "Acoustic Booths & Pods", "desc": "Fabric-wrapped phone booths, private video-conferencing pods, and sound-insulated micro-meeting suites." }
+    ],
     "gallery": [
       "/assets/4life/WA0021.webp",
       "/assets/4life/WA0053.webp",
@@ -46,13 +73,22 @@ export const services = [
     ]
   },
   {
-    "id": "flooring",
-    "slug": "flooring",
-    "title": "Acoustic Panelling, Demountable Partitions & Ceiling Assemblies",
-    "tag": "Partitions & Ceilings",
-    "summary": "High-performance acoustic wall cladding, demountable vision partitions, and commercial flooring",
-    "description": "Engineered acoustic wall treatments, fluted decorative louvers, sound-damped vision door assemblies with concealed hinges, baffle grid ceilings, and precision-leveled commercial flooring installations meeting strict acoustic and fire-rating criteria.",
+    "id": "acoustics-partitions",
+    "slug": "acoustics-partitions",
+    "title": "Acoustic Panelling & Partitions",
+    "tag": "Acoustics & Partitions",
+    "summary": "Acoustic slat panelling, partition framing, ceilings and timber flooring.",
+    "description": "Wall cladding, timber slat panels, acoustic treatments, demountable partitions and flooring for commercial spaces.",
+    "subheading": "Acoustic panelling, partitions and flooring",
     "heroImage": "/assets/4life/WA0046.webp",
+    "capabilities": [
+      { "num": "01", "title": "Acoustic Timber Slat Panelling", "desc": "Micro-perforated and grooved acoustic timber slat panels with sound-absorbing fleece backing." },
+      { "num": "02", "title": "Demountable Partitions", "desc": "Modular glass and drywall partitions with high sound transmission class (STC) ratings and flush vision doors." },
+      { "num": "03", "title": "Hardwood & Laminate Flooring", "desc": "Engineered hardwood, heavy-duty commercial laminate, and raised access flooring installations." },
+      { "num": "04", "title": "Fluted & Louvered Walls", "desc": "Architectural feature wall cladding with crisp shadow gaps and concealed fastening systems." },
+      { "num": "05", "title": "Concealed Access Doors", "desc": "Flush secret doors seamlessly integrated into wall panelling with concealed hinges and touch latches." },
+      { "num": "06", "title": "Sub-Base Moisture Verification", "desc": "Moisture barrier testing and sub-floor leveling protocols before laying premium timber surfaces." }
+    ],
     "gallery": [
       "/assets/4life/WA0046.webp",
       "/assets/4life/WA0044.webp",
@@ -61,13 +97,22 @@ export const services = [
     ]
   },
   {
-    "id": "buildings",
-    "slug": "buildings",
-    "title": "Modular Workstation Deployments & Mission-Critical Facilities",
-    "tag": "Workplace Systems",
-    "summary": "High-volume modular workstation assembly, wire-management raceways, and data centre fit-outs",
-    "description": "Rapid on-site assembly, precision laser leveling, and wire-management integration for large-scale workstation clusters, acoustic privacy dividers, executive cabins, and mission-critical corporate infrastructure including data centres and control rooms.",
+    "id": "workstations-facilities",
+    "slug": "workstations-facilities",
+    "title": "Workstations & Critical Facilities",
+    "tag": "Workstations & Facilities",
+    "summary": "Workstation clusters, meeting suites, cafeterias and multi-floor corporate deployments.",
+    "description": "Workstations, breakout hubs, conference suites, cafeteria joinery and multi-floor headquarters deployments.",
+    "subheading": "Scalable fit-outs for multi-floor offices",
     "heroImage": "/assets/4life/WA0035.webp",
+    "capabilities": [
+      { "num": "01", "title": "Bulk Workstation Installation", "desc": "High-volume assembly, laser alignment, and raceway leveling for multi-floor corporate floor plates." },
+      { "num": "02", "title": "Executive Cabins & Boardrooms", "desc": "Director suites, meeting tables, credenzas, and presentation walls built to tender specifications." },
+      { "num": "03", "title": "Cafeteria & Pantry Joinery", "desc": "Heavy-duty commercial counters, pantry storage, bench seating, and durable dining surfaces." },
+      { "num": "04", "title": "Auditorium & Town Hall Panelling", "desc": "Tiered seating, stage panelling, AV backdrops, and acoustic wall cladding for town halls." },
+      { "num": "05", "title": "Phased Deployment for Live Offices", "desc": "Staged weekend and night execution allowing client operations to continue without disruption." },
+      { "num": "06", "title": "EHS & PPE Compliance", "desc": "Strict adherence to safety protocols, personal protective equipment, and site housekeeping standards." }
+    ],
     "gallery": [
       "/assets/4life/WA0053.webp",
       "/assets/4life/WA0044.webp",
@@ -85,27 +130,27 @@ export const projects = [
     "tag": "Turnkey Commercial Fit-Out",
     "location": "Andheri East, Mumbai",
     "date": "Completed Turnkey Project",
-    "summary": "Full-scale turnkey commercial fit-out spanning architectural plywood joinery, complete electrical distribution, plumbing, and wall reconfiguration.",
-    "description": "Executed complete turnkey commercial interior contracting for the 4Life (The Immune System Company) corporate headquarters in Andheri, Mumbai. The comprehensive scope covered every phase of fit-out execution: from rough on-site plywood framing of custom curved reception counters and master-crafted fluted acoustic timber walls, to complete conduit electrical wiring, suspended track lighting, plumbing and sanitary lines, internal wall demolition, drywall restructuring, and decorative acoustic baffle grid ceilings.",
+    "summary": "Full turnkey fit-out: architectural joinery, electrical, plumbing and wall reconfiguration",
+    "description": "Turnkey interior contracting for the 4Life (The Immune System Company) corporate headquarters in Andheri, Mumbai, covering every phase from rough plywood framing to final services and finishes.",
     "video": "/assets/4life/4life-walkthrough.mp4",
     "videoPoster": "/assets/4life/4life-video-poster.webp",
     "heroImage": "/assets/4life/WA0021.webp",
     "trades": [
       {
-        "name": "Plywood & Architectural Joinery",
-        "details": "Fabricated custom curved reception desks with acrylic finishing, 20-seater conference tables, executive cabin desks with credenzas, fluted acoustic timber wall cladding, and decorative wooden ceiling grids."
+        "name": "Scope 1: Plywood & Architectural Joinery",
+        "details": "Fabricated custom curved reception desk with high-gloss acrylic and warm backlighting, 20-seater solid timber conference table with integrated AV pop-ups, executive cabin suites with return credenzas, fluted dark timber wall panelling, and suspended wooden ceiling baffle grids."
       },
       {
-        "name": "Electrical, Lighting & Data",
-        "details": "Concealed conduit electrical wiring, structured network and data cabling, under-desk power management, LED profile cove lighting, suspended track spotlights, and conference room AV/projector systems."
+        "name": "Scope 2: Electrical, Lighting & Cabling",
+        "details": "Complete concealed electrical infrastructure, under-desk power and structured data cabling for workstations, recessed LED ceiling spot arrays, perimeter cove lighting, track spotlights, and conference room AV integration."
       },
       {
-        "name": "Walls Rearrangement & Partitions",
-        "details": "Demolition and civil restructuring of interior space, acoustic drywall partitions, exposed rustic brick feature accent walls, and frameless glass vision door installations."
+        "name": "Scope 3: Walls & Partitions",
+        "details": "Interior demolition and structural space reconfiguration, acoustic drywall partitions, exposed rustic brick feature accent walls, and frameless glass partition systems with vision doors."
       },
       {
-        "name": "Plumbing & Mechanical Services",
-        "details": "Pantry plumbing pipelines, sanitary drainage fixtures, integration with building fire sprinkler lines, and overhead HVAC ducting and cassette coordination."
+        "name": "Scope 4: Plumbing & Mechanical",
+        "details": "Pantry plumbing supply and drainage lines, sanitary fixtures, integration with building fire sprinkler lines, and overhead HVAC ducting and cassette coordination."
       }
     ],
     "gallery": [
@@ -122,14 +167,14 @@ export const projects = [
     ]
   },
   {
-    "id": "light-pine-kitchen",
-    "slug": "light-pine-kitchen",
-    "title": "Corporate Boardroom & Executive Conference Suites",
+    "id": "boardroom-conference-suites",
+    "slug": "boardroom-conference-suites",
+    "title": "Corporate Boardroom & Conference Suites",
     "tag": "Corporate Joinery",
     "location": "Mumbai, Maharashtra",
     "date": "Completed Project",
-    "summary": "Custom 20-seater conference suite, dual-monitor video conference wall, acoustic timber panelling, and integrated wire management.",
-    "description": "Engineered and installed high-capacity executive boardroom joinery including a continuous 20-seater conference table with integrated pop-up AV raceways, bookmatched walnut veneer wall panelling housing dual video conferencing displays, suspended acoustic wooden ceiling trays, and 3D geometric acoustic block wall installations.",
+    "summary": "20-seater suite with dual-screen video wall, acoustic timber panelling and integrated cabling",
+    "description": "Serving as the centerpiece of a corporate regional headquarters, this project required high-tolerance craftsmanship. The 20-seater boardroom table was constructed with internal steel sub-frames and wrapped in bookmatched walnut veneer with motorized pop-up AV raceways. The suite features architectural acoustic panelling, dual video conferencing display integration, suspended acoustic wooden ceiling trays, and 3D geometric acoustic block wall installations delivered to strict schedule milestones.",
     "heroImage": "/assets/4life/WA0056.webp",
     "gallery": [
       "/assets/4life/WA0056.webp",
@@ -139,14 +184,14 @@ export const projects = [
     ]
   },
   {
-    "id": "airy-apartment",
-    "slug": "airy-apartment",
-    "title": "Architectural Acoustic Panelling & Demountable Partitions",
+    "id": "acoustic-panelling-partitions",
+    "slug": "acoustic-panelling-partitions",
+    "title": "Acoustic Panelling & Demountable Partitions",
     "tag": "Acoustic Partitions",
     "location": "Mumbai, Maharashtra",
     "date": "Completed Project",
-    "summary": "Multi-tone acoustic fabric wall panelling, integrated bench plinths, flush acoustic vision doors, and corridor cladding.",
-    "description": "On-site precision fabrication and installation of architectural acoustic wall cladding across high-traffic breakout corridors, demountable sound-damped vision door assemblies with concealed hinges, and geometric fluted wall treatments achieving stringent acoustic performance ratings.",
+    "summary": "Multi-tone fabric panelling, bench plinths, flush acoustic vision doors and corridor cladding",
+    "description": "Executed across high-traffic executive spaces, this project demanded precise integration of acoustic fabric panels, demountable sound-damped glazed vision doors, and geometric wall treatments achieving superior NRC ratings while maintaining crisp shadow gaps. Our carpentry crews fabricated flush acoustic doors featuring concealed hinges that align seamlessly with adjacent panelling. Every joint was pre-tested on-site for movement clearances and expansion gaps, ensuring uncompromised acoustic dampening and aesthetic longevity.",
     "heroImage": "/assets/4life/WA0043.webp",
     "gallery": [
       "/assets/4life/WA0043.webp",
@@ -156,14 +201,14 @@ export const projects = [
     ]
   },
   {
-    "id": "modern-kitchen",
-    "slug": "modern-kitchen",
-    "title": "Commercial Reception Lobby & Architectural Brand Displays",
+    "id": "reception-lobby-displays",
+    "slug": "reception-lobby-displays",
+    "title": "Reception Lobby & Brand Displays",
     "tag": "Commercial Fit-Outs",
     "location": "Mumbai, Maharashtra",
     "date": "Completed Project",
-    "summary": "Custom reception counters, backlit brand signage displays, and executive trophy showcase joinery.",
-    "description": "Executed bespoke front-of-house joinery including custom reception desks with warm accent plinths, 3D backlit brand signage displays, and full-height executive trophy showcase units with warm LED backlighting.",
+    "summary": "Custom reception counters, backlit brand signage and executive trophy showcases",
+    "description": "Executed bespoke front-of-house joinery including custom reception desks with warm accent plinths, 3D backlit brand signage displays, and full-height executive trophy showcase units with warm LED backlighting. Every display fixture and reception counter was crafted to millimeter drawing tolerances, featuring concealed electrical channels, warm LED driver access, and heavy-duty high-traffic finishes suited for corporate headquarters.",
     "heroImage": "/assets/4life/WA0022.webp",
     "gallery": [
       "/assets/4life/WA0022.webp",
@@ -174,14 +219,14 @@ export const projects = [
     ]
   },
   {
-    "id": "hamptons-manor-house",
-    "slug": "hamptons-manor-house",
-    "title": "Bespoke Executive Director Cabins & Veneer Joinery",
+    "id": "executive-director-cabins",
+    "slug": "executive-director-cabins",
+    "title": "Executive Director Cabins & Veneer Joinery",
     "tag": "Executive Joinery",
     "location": "Mumbai, Maharashtra",
     "date": "Completed Project",
-    "summary": "Executive director desk suites, full-height veneer wall cladding, low-line walnut credenzas, and private discussion suites.",
-    "description": "Crafted executive leadership suites featuring bookmatched natural walnut veneer desks, low-line multi-drawer credenzas, full-height architectural wall panelling with concealed perimeter LED cove lighting, and private round discussion tables with matching executive seating.",
+    "summary": "Director desk suites, full-height veneer cladding, walnut credenzas and discussion suites",
+    "description": "Crafted executive leadership suites featuring bookmatched natural walnut veneer desks, low-line multi-drawer credenzas, full-height architectural wall panelling with concealed perimeter LED cove lighting, and private round discussion tables with matching executive seating. Each suite was precision-fitted on-site by our master carpenters using high-grade marine ply substrates, hairline veneer joints, and concealed wire chase integration for clean desk surfaces.",
     "heroImage": "/assets/4life/WA0059.webp",
     "gallery": [
       "/assets/4life/WA0059.webp",
@@ -193,14 +238,14 @@ export const projects = [
     ]
   },
   {
-    "id": "dark-oak-kitchen",
-    "slug": "dark-oak-kitchen",
-    "title": "Bulk Modular Workstation Deployment & Floor Handover",
+    "id": "modular-workstation-deployment",
+    "slug": "modular-workstation-deployment",
+    "title": "Modular Workstation Deployment & Floor Handover",
     "tag": "Modular Workstations",
     "location": "Mumbai, Maharashtra",
     "date": "Completed Project",
-    "summary": "Rapid on-site assembly, wire-management leveling, acoustic privacy screens, and open floor civil handover.",
-    "description": "Deployed skilled installation teams to unbox, assemble, level, and wire-manage modular linear workstation clusters with blue acoustic divider screens, open workstation counters with returns, and final civil handover across polished marble floor plates with integrated MEP services.",
+    "summary": "Rapid assembly, raceway levelling, acoustic privacy screens and floor handover",
+    "description": "Deploying across expansive commercial floor plates, Laxmi Enterprises deployed an organized team of certified joiners and fitters to execute bulk workstation rollouts ahead of client handover. The scope encompassed laser-assisted raceway leveling, acoustic fabric privacy divider screen assembly, integrated under-desk power and data cable trunking, and coordination with MEP subcontractors for clean floor-grommet integration.",
     "heroImage": "/assets/4life/WA0035.webp",
     "gallery": [
       "/assets/4life/WA0035.webp",
@@ -217,43 +262,43 @@ export const testimonials = [];
 
 export const faqs = [
   {
-    "question": "What material grades and tender specifications do you execute?",
-    "answer": "We execute work strictly compliant with project tender specifications and BOQ schedules, utilizing commercial-grade IS:710 Marine/BWP plywood, IS:303 BWR plywood, high-density prelaminated boards, certified natural wood veneers, acrylics, and OEM hardware systems (Häfele, Hettich, Blum, Godrej, Ebco)."
+    "question": "Which materials do you use?",
+    "answer": "We build to your BOQ. Typical materials: BWP/BWR plywood, HDHMR and fire-retardant boards from certified brands, finished in laminate, veneer or PU."
   },
   {
-    "question": "What contract models do you operate under (Labour vs Turnkey Item-Rate)?",
-    "answer": "We undertake both item-rate turnkey contracting (complete material procurement, fabrication, finishing, and MEP interface) and specialized labour-only contracting for main EPC contractors, PMCs, and corporate developers who supply materials on site."
+    "question": "How quickly can you start, and how long do projects take?",
+    "answer": "Crews are on site within 48–72 hours of drawing sign-off and site clearance. Typical duration: 2–4 weeks for office clusters, 2–6 months for multi-floor fit-outs."
   },
   {
-    "question": "What Quality Assurance (QA/QC) and safety standards do you enforce?",
-    "answer": "Every project is supervised directly on site by our Founder & Principal Supervisor. We maintain a zero-tolerance policy for drawing deviations, conduct pre-execution sample mock-ups, enforce millimeter tolerances (<0.5mm on edge-banding/joinery), and strictly mandate Environment, Health & Safety (EHS) PPE protocols."
+    "question": "Do you offer labour-only contracts?",
+    "answer": "Yes. We offer labour-only (client-supplied material) or full turnkey/item-rate contracts covering procurement, fabrication and installation."
   },
   {
-    "question": "What is your project turnaround timeline and crew scalability across India?",
-    "answer": "With our operational base in Mumbai and active pan-India deployment capability, our core supervisory team and 16 to 30+ verified trade-certified carpenters can deploy to site within 3 to 7 working days. We scale rapidly to 50–100+ craftsmen to meet compressed milestone schedules."
+    "question": "Is the work supervised on site?",
+    "answer": "Yes. Our founder supervises site operations daily, against shop drawings, quality checklists and safety standards, through to joint snag handover."
   }
 ];
 
 export const companyValues = [
   {
     "number": "01",
-    "title": "Milestone Schedule Rigor",
-    "description": "Disciplined milestone tracking, multi-shift deployment, and ahead-of-schedule handovers without compromising structural integrity or finish quality."
+    "title": "Schedule Discipline",
+    "description": "Milestone enforcement, buffer planning and structured shifts to meet handover dates"
   },
   {
     "number": "02",
-    "title": "Strict BOQ & Drawing Compliance",
-    "description": "Flawless millimeter-level execution adhering 100% to architectural GFC drawings, material specifications, and approved shop details."
+    "title": "BOQ Compliance",
+    "description": "Strict adherence to drawings, specified hardware, edge-banding tolerances and joinery details"
   },
   {
     "number": "03",
-    "title": "Hands-On Trade Supervision",
-    "description": "Founder-led, daily on-site supervision ensuring continuous QA/QC checks, seamless MEP interface coordination, and prompt snag resolution."
+    "title": "Trade Supervision",
+    "description": "Daily on-site monitoring by supervisors with 20–30 years of field experience"
   },
   {
     "number": "04",
-    "title": "Scalable Multi-Trade Workforce",
-    "description": "A vetted core bench of 16 to 30+ master carpenters, joiners, and polishers, rapidly scalable to 50–100+ tradesmen for fast-track commercial turnarounds."
+    "title": "Scalable Workforce",
+    "description": "16–30 skilled craftsmen on call, expandable on demand, with proven capability to supervise larger crews."
   }
 ];
 

@@ -9,18 +9,19 @@ export default function ContactPage() {
       <section className="hero-layout-four" style={{ padding: "10rem 4rem 6rem" }}>
         <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
           <div style={{ marginBottom: "1.5rem" }}>
-            <span
+            <h1
               style={{
                 fontFamily: "var(--font--heading-font)",
                 fontSize: "0.875rem",
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
                 color: "var(--color--darkest)",
-                fontWeight: 700
+                fontWeight: 700,
+                margin: 0
               }}
             >
-              Tender Submissions &amp; Inquiries
-            </span>
+              Contact Us
+            </h1>
           </div>
 
           <div
@@ -33,7 +34,7 @@ export default function ContactPage() {
           >
             {/* Left Column: Workshop Details */}
             <div>
-              <h1
+              <h2
                 style={{
                   fontFamily: "var(--font--heading-font)",
                   fontSize: "clamp(2.5rem, 5vw, 4rem)",
@@ -44,11 +45,35 @@ export default function ContactPage() {
                   color: "var(--color--darkest)"
                 }}
               >
-                Request a Tender Proposal or Detailed Execution Quote
-              </h1>
+                Request a Proposal or Quote
+              </h2>
+              <h3
+                style={{
+                  fontFamily: "var(--font--heading-font)",
+                  fontSize: "clamp(1.5rem, 2.5vw, 2rem)",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.04em",
+                  margin: "0 0 1rem",
+                  color: "var(--color--darkest)"
+                }}
+              >
+                Tenders &amp; BOQ Submissions
+              </h3>
               <p style={{ fontSize: "1.125rem", lineHeight: "1.75", color: "var(--color--darkest)", margin: "0 0 3rem" }}>
-                We welcome invitations to tender, BOQ packages, architectural shop drawings, and commercial contractor partnerships. Connect with our estimation and project delivery team to schedule a site survey or discuss project execution timelines.
-              </p>
+                We welcome tender invitations, BOQ packages, shop drawings and contractor partnerships. Our team reviews drawings and schedules promptly and arranges site inspections across Mumbai and pan-India</p>
+
+              <h4
+                style={{
+                  fontFamily: "var(--font--heading-font)",
+                  fontSize: "1.25rem",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.04em",
+                  margin: "0 0 1.5rem",
+                  color: "var(--color--darkest)"
+                }}
+              >
+                Connect With Us
+              </h4>
 
               {/* Direct Details List */}
               <div style={{ display: "flex", flexDirection: "column", gap: "2rem", marginBottom: "3rem" }}>
@@ -85,7 +110,7 @@ export default function ContactPage() {
               <div style={{ borderRadius: "var(--spacing--xs, 0.75rem)", overflow: "hidden", height: "260px" }}>
                 <img
                   src="/assets/669e30930153db0a0283d162_pexels-heyho-7147290%20(1).webp"
-                  alt="Woodworked Consultation Desk"
+                  alt="Laxmi Enterprises Consultation Desk"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
               </div>

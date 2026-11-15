@@ -44,20 +44,19 @@ https://woodworked-template.webflow.io
 ├── / (Home Page)
 ├── /about (Discover the Business / Company, Team & Values)
 ├── /services (Services Index / Overview & Work in Numbers)
-│   ├── /services/kitchens (Bespoke Kitchen Cabinetry & Joinery)
-│   ├── /services/bathrooms (Luxury Wood Vanities & Moisture-Resistant Joinery)
-│   ├── /services/furniture (Custom Handcrafted Living & Dining Furniture)
-│   ├── /services/flooring (Hardwood & Engineered Architectural Flooring)
-│   └── /services/buildings (Timber Frame Outbuildings, Pergolas & Architectural Structures)
+│   ├── /services/turnkey-interiors (Commercial Turnkey Fit-Outs & Civil Reconfiguration)
+│   ├── /services/hospitality-healthcare (Hospitality & Healthcare Fit-Outs)
+│   ├── /services/joinery-furnishings (Architectural Joinery & Furnishings)
+│   ├── /services/acoustics-partitions (Acoustic Panelling & Partitions)
+│   └── /services/workstations-facilities (Workstations & Critical Facilities)
 ├── /portfolio (Portfolio Index / Featured Works & Gallery)
-│   ├── /projects/light-pine-kitchen (Case Study 1)
-│   ├── /projects/airy-apartment (Case Study 2)
-│   ├── /projects/modern-kitchen (Case Study 3)
-│   ├── /projects/hamptons-manor-house (Case Study 4)
-│   └── /projects/dark-oak-kitchen (Case Study 5)
+│   ├── /projects/4life-andheri (Case Study: 4Life Corporate Office & Healthcare Facility)
+│   ├── /projects/boardroom-conference-suites (Case Study 1)
+│   ├── /projects/acoustic-panelling-partitions (Case Study 2)
+│   ├── /projects/reception-lobby-displays (Case Study 3)
+│   ├── /projects/executive-director-cabins (Case Study 4)
+│   └── /projects/modular-workstation-deployment (Case Study 5)
 ├── /contact (Contact & Free Quote Inquiry Form)
-├── /template-help/licences (Asset Licensing & Image Attributions)
-├── /template-help/changelog (Template Release History)
 ├── /404 (Custom Not Found Error Experience)
 └── /401 (Protected Password Entry View)
 ```
@@ -100,9 +99,8 @@ The website does **not** rely on a monolithic page template. It employs **6 dist
    - Portfolio Index: Dynamic filterable project cards with category badges and image zoom hover states.
    - Project Detail: High-resolution project hero banner, metadata bar (Client, Location, Completion Date, Wood Species), expansive multi-image project gallery, narrative case study, and bottom CTA banner.
 
-6. **Utility Archetypes** (`/contact`, `/template-help/*`, `/404`, `/401`):
+6. **Utility Archetypes** (`/contact`, `/404`, `/401`):
    - Contact: Split layout with business location info, business hours, interactive inquiry form with dropdown selection, and embedded FAQ.
-   - Template Pages: Clean document layout for licences and changelog.
    - 404 & 401: Centered minimalist cards with return to homepage actions.
 
 ---

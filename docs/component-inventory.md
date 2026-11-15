@@ -50,7 +50,7 @@
   - `.footer-upper`: 3-column split:
     - Column 1: Woodworked Logo, company registration, workshop address, newsletter/contact prompt.
     - Column 2: Main navigation links (`Home`, `About`, `Portfolio`, `Services`, `Contact`).
-    - Column 3: Services index links (`Kitchens`, `Bathrooms`, `Furniture`, `Flooring`, `Buildings`).
+    - Column 3: Services index links (`Turnkey Interiors`, `Hospitality & Healthcare`, `Furniture`, `Flooring`, `Buildings`).
   - `.footer-lower`: Horizontal bar separated by `1px solid var(--color--dark)`:
     - Left: Copyright notice `© Woodworked 2026. All rights reserved.`
     - Right: Sub-links (`Licensing`, `Built by FlowForge`, `Powered by Webflow`).
@@ -131,7 +131,7 @@
 - **Anatomy**:
   - Image container with aspect ratio `4:3` or `16:9`
   - Zoom effect on parent hover: `transform: scale(1.05); transition: 0.5s ease;`
-  - Category pill badge (e.g. `[ Kitchens ]`)
+  - Category pill badge (e.g. `[ Turnkey Interiors ]`)
   - Headline: Title of service
   - Short description excerpt
   - "Explore Service" arrow link
@@ -141,8 +141,8 @@
 - **Anatomy**:
   - High-res photography of completed project
   - Dark scrim overlay on hover
-  - Category tag (e.g. `Joinery`, `Residential`, `Kitchen`)
-  - Project Title (e.g. `Light Pine Kitchen`, `Airy Apartment`)
+  - Category tag (e.g. `Joinery`, `Commercial`, `Fit-Out`)
+  - Project Title (e.g. `Corporate Boardroom & Conference Suites`, `Acoustic Panelling & Demountable Partitions`)
   - Link to `/projects/[slug]`
 
 ### 4.3 Team Member Card (`TeamCard`)
@@ -172,7 +172,7 @@
 ### 5.2 FAQ Accordion (`FaqAccordion`)
 - **Webflow Class**: `.faq-layout-one`
 - **Anatomy**:
-  - Category headline: `Looking for some answers?`
+  - Category headline: `FAQs`
   - Item list of collapsible cards:
     - Trigger header with Question Title (H4) and rotating chevron icon
     - Collapsible answer container with smooth max-height animation
@@ -185,8 +185,8 @@
   2. `Phone-Number-2`: Phone Number input (tel, required, placeholder: "Phone Number")
   3. `email-2`: Email Address input (email, required, placeholder: "Email Address")
   4. `Type-of-Service-2`: Select dropdown with options:
-     - `Kitchens`
-     - `Bathrooms`
+     - `Turnkey Interiors`
+     - `Hospitality & Healthcare`
      - `Furniture`
      - `Flooring`
      - `Buildings`

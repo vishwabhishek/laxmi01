@@ -23,20 +23,21 @@ export default function PortfolioPage() {
       <section className="hero-layout-three" style={{ padding: "10rem 4rem 3rem" }}>
         <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
           <div style={{ marginBottom: "1rem" }}>
-            <span
+            <h1
               style={{
                 fontFamily: "var(--font--heading-font)",
                 fontSize: "0.875rem",
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
                 color: "var(--color--darkest)",
-                fontWeight: 700
+                fontWeight: 700,
+                margin: 0
               }}
             >
-              Enterprise Project Portfolio
-            </span>
+              Portfolio
+            </h1>
           </div>
-          <h1
+          <h2
             style={{
               fontFamily: "var(--font--heading-font)",
               fontSize: "clamp(2.5rem, 5vw, 4.25rem)",
@@ -46,8 +47,8 @@ export default function PortfolioPage() {
               color: "var(--color--darkest)"
             }}
           >
-            Commercial Fit-Outs &amp; Executed Projects
-          </h1>
+            Executed Fit-Out Projects
+          </h2>
         </div>
       </section>
 
@@ -75,11 +76,9 @@ export default function PortfolioPage() {
                 color: "var(--color--darkest)"
               }}
             >
-              Contracting Execution Across Corporate &amp; Institutional Facilities
+              Executed Fit-Out Projects
             </h2>
-            <p style={{ margin: 0, fontSize: "1.0625rem", lineHeight: "1.7", color: "var(--color--darkest)" }}>
-              Demonstrating full-scope turnkey fit-outs, high-volume modular workstation deployments, high-performance acoustic panelling, and executive architectural millwork executed to tight milestone deadlines and stringent tender specifications.
-            </p>
+            <p style={{ margin: 0, fontSize: "1.0625rem", lineHeight: "1.7", color: "var(--color--darkest)" }}>Full-scope turnkey fit-outs, high-volume workstation deployments, acoustic panelling and executive millwork, delivered to tight milestones and tender specifications. Our supervisors enforce tolerance checks, drawing compliance and site safety on every project.</p>
           </div>
 
           {/* Filter Pills */}
@@ -204,11 +203,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* 5. CTA BANNER */}
-      <CtaBanner
-        title="Share your tender or BOQ for project estimation"
-        subtitle="Send us your drawing sets, tender schedules, or joinery elevations for rapid feasibility study and item-rate pricing."
-        buttonText="Get a Quote"
-      />
+      <CtaBanner />
     </main>
   );
 }

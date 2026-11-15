@@ -52,12 +52,10 @@ To expand beyond the 4 original abstract icons, an additional suite of **8 custo
 | [`abstract-growth-rings.svg`](file:///d:/carpentry/site/public/assets/custom-icons/abstract-growth-rings.svg) | Sourcing & Natural Timber | Organic annual tree growth rings radiating from heartwood |
 | [`abstract-architectural-arch.svg`](file:///d:/carpentry/site/public/assets/custom-icons/abstract-architectural-arch.svg) | Architecture & Spatial Design | Monumental Bauhaus post-and-beam portal |
 | [`abstract-compass-caliper.svg`](file:///d:/carpentry/site/public/assets/custom-icons/abstract-compass-caliper.svg) | Precision Measurement & Engineering | Intersecting geometric arcs of a drafting compass/caliper |
-| [`abstract-wood-shaving.svg`](file:///d:/carpentry/site/public/assets/custom-icons/abstract-wood-shaving.svg) | Hand-Planing Artistry & Texture | Continuous spiral ribbon of shaved oak/cedar |
+| [`abstract-wood-shaving.svg`](file:///d:/carpentry/site/public/assets/custom-icons/abstract-wood-shaving.svg) | Hand-Planing Artistry & Texture | Continuous spiral ribbon of shaved timber/cedar |
 | [`abstract-leaf-canopy.svg`](file:///d:/carpentry/site/public/assets/custom-icons/abstract-leaf-canopy.svg) | FSC Forestry & Sustainability | Symmetrical modernist seedling & forest canopy |
 | [`abstract-furnishing-seat.svg`](file:///d:/carpentry/site/public/assets/custom-icons/abstract-furnishing-seat.svg) | Custom Furniture & Seating | Bauhaus cantilever lounge chair silhouette |
 | [`abstract-finish-star.svg`](file:///d:/carpentry/site/public/assets/custom-icons/abstract-finish-star.svg) | Lifetime Guarantee & Danish Oil Finish | 4-pointed modernist geometric starburst seal |
-
-*Interactive Showcase*: Available live at `http://localhost:5173/icons-showcase.html` for instant preview and downloads.
 
 ---
 
@@ -65,26 +63,26 @@ To expand beyond the 4 original abstract icons, an additional suite of **8 custo
 
 | Filename | Dimensions | Format | Usage Context / Pages | Content Description |
 | :--- | :---: | :---: | :--- | :--- |
-| `669e2fd6a6aba76de91c87a1_pexels-heyho-7060820 (1).webp` | 1920×1281 | WEBP | Services Index | Kitchen cabinetry display card |
+| `669e2fd6a6aba76de91c87a1_pexels-heyho-7060820 (1).webp` | 1920×1281 | WEBP | Services Index | Commercial fit-out display card |
 | `669e2fd6062f15e70c4597f3_pexels-heyho-6207945 (1).webp` | 1920×1281 | WEBP | Services Index | Hardwood architectural flooring card |
-| `66951617c00cabf74248a62e_pexels-heyho-6758773.webp` | 1500×1012 | WEBP | Services, Service: Kitchens | Custom oak kitchen island & drawers |
-| `6695161351f2fa07d3842571_pexels-heyho-7018822.webp` | 1500×1001 | WEBP | Services, Service: Bathrooms | Minimalist wood bathroom vanity |
+| `66951617c00cabf74248a62e_pexels-heyho-6758773.webp` | 1500×1012 | WEBP | Services, Service: Turnkey Interiors | Executive joinery credenza & drawers |
+| `6695161351f2fa07d3842571_pexels-heyho-7018822.webp` | 1500×1001 | WEBP | Services, Service: Hospitality & Healthcare | Hospitality restroom vanity joinery |
 | `669516017d1fbb54218dbece_pexels-heyho-6480198.webp` | 1500×1001 | WEBP | Services, Service: Furniture | Handcrafted walnut dining table |
 | `669516a9f75524a5d270695b_pexels-heyho-6032422 (1).webp` | 1500×1001 | WEBP | Services, Service: Flooring | Herringbone parquet flooring installation |
 | `6695160c5309749d5158a15a_pexels-heyho-6284232.webp` | 1500×1001 | WEBP | Services, Service: Buildings | Timber-frame architectural studio structure |
-| `669691fc6c8ad9651fd2bad9_pexels-heyho-6508354.webp` | 1920×2757 | WEBP | Service: Kitchens | Full-height pantry cabinetry |
-| `669691ff46d15a1abea49083_pexels-heyho-6585767.webp` | 1920×1281 | WEBP | Service: Kitchens | Dovetail drawer detail |
-| `669692028c51930cb1f1e774_pexels-heyho-7046169.webp` | 1920×1938 | WEBP | Service: Kitchens | Kitchen island detail |
-| `6696920540ca889011f9dcd9_pexels-heyho-6508350.webp` | 1920×1281 | WEBP | Service: Kitchens | Countertop joinery seam |
-| `66968f657e4684f9de38ac8d_pexels-heyho-6284228.webp` | 1920×2880 | WEBP | Service: Bathrooms | Teak vanity basin integration |
-| `66968f6bacdd554c9b6decad_pexels-heyho-6758534.webp` | 1920×1281 | WEBP | Service: Bathrooms | Floating bathroom cabinetry |
-| `66968f6e839285643db2bf7a_pexels-heyho-6958128.webp` | 1920×2400 | WEBP | Service: Bathrooms | Waterproof timber wall paneling |
-| `66968f71771fde0ba8427dd6_pexels-heyho-6758529.webp` | 1920×1281 | WEBP | Service: Bathrooms | Custom mirror timber frame |
+| `669691fc6c8ad9651fd2bad9_pexels-heyho-6508354.webp` | 1920×2757 | WEBP | Service: Turnkey Interiors | Full-height pantry cabinetry |
+| `669691ff46d15a1abea49083_pexels-heyho-6585767.webp` | 1920×1281 | WEBP | Service: Turnkey Interiors | Dovetail drawer detail |
+| `669692028c51930cb1f1e774_pexels-heyho-7046169.webp` | 1920×1938 | WEBP | Service: Turnkey Interiors | Architectural joinery detail |
+| `6696920540ca889011f9dcd9_pexels-heyho-6508350.webp` | 1920×1281 | WEBP | Service: Turnkey Interiors | Countertop joinery seam |
+| `66968f657e4684f9de38ac8d_pexels-heyho-6284228.webp` | 1920×2880 | WEBP | Service: Hospitality & Healthcare | Teak vanity basin integration |
+| `66968f6bacdd554c9b6decad_pexels-heyho-6758534.webp` | 1920×1281 | WEBP | Service: Hospitality & Healthcare | Healthcare vanity cabinetry |
+| `66968f6e839285643db2bf7a_pexels-heyho-6958128.webp` | 1920×2400 | WEBP | Service: Hospitality & Healthcare | Waterproof timber wall paneling |
+| `66968f71771fde0ba8427dd6_pexels-heyho-6758529.webp` | 1920×1281 | WEBP | Service: Hospitality & Healthcare | Custom mirror timber frame |
 | `66969080bf6d348e6ecaae39_pexels-heyho-6284234.webp` | 1920×2880 | WEBP | Service: Furniture | Sculptural dining chair |
 | `669690855f190c374318efff_pexels-heyho-6587850.webp` | 1920×1282 | WEBP | Service: Furniture | Credenza sideboard storage |
 | `669690fa26c83d362f3cb1fa_pexels-heyho-6782434.webp` | 1920×2877 | WEBP | Service: Furniture | Joinery tenon detail |
 | `669690fc708c8f2ba8ef746e_pexels-heyho-6284229.webp` | 1920×1281 | WEBP | Service: Furniture | Turned solid wood legs |
-| `66968d6b2bde50f897690e75_pexels-heyho-6908500.webp` | 3188×4406 | WEBP | Service: Flooring | Wide plank white oak floor |
+| `66968d6b2bde50f897690e75_pexels-heyho-6908500.webp` | 3188×4406 | WEBP | Service: Flooring | Acoustic timber floor |
 | `66968e540373bbf4bd0ffe8c_pexels-heyho-6207950 (1).webp` | 1920×1281 | WEBP | Service: Flooring | Chevron timber flooring |
 | `66968d71c6044b3c55e2ddab_pexels-skylar-kang-6046819.webp` | 2448×3696 | WEBP | Service: Flooring | Wood grain texture close-up |
 | `66968e51d0ed7eea431beed2_pexels-heyho-6585760 (1).webp` | 1920×1281 | WEBP | Service: Flooring | Finished threshold transition |
@@ -100,27 +98,27 @@ To expand beyond the 4 original abstract icons, an additional suite of **8 custo
 | Filename | Dimensions | Format | Usage Context / Pages | Content Description |
 | :--- | :---: | :---: | :--- | :--- |
 | `668bcd54dbce4bc94f341d1b_pexels-lisa-anna-901356985-19878513 (1).webp` | 3440×2294 | WEBP | Home, All Project Details | Master portfolio banner hero |
-| `669a78fadc1f1a2934f63720_pexels-heyho-6933857 (1).webp` | 1920×1314 | WEBP | Home, Portfolio | Light Pine Kitchen preview card |
-| `669a78fdd29c1ac1e669b14c_pexels-heyho-6933861 (1).webp` | 1920×1281 | WEBP | Project: Light Pine Kitchen | Kitchen cabinetry full view |
-| `669a78ffbc9370c4a80979fe_pexels-heyho-6933859 (1).webp` | 1920×1281 | WEBP | Project: Light Pine Kitchen | Built-in shelving detail |
-| `669a7901fb10c5774c664444_pexels-heyho-6933853 (1).webp` | 1920×1281 | WEBP | Project: Light Pine Kitchen | Pine island & breakfast bar |
-| `669a790468fdc286c106c8b3_pexels-heyho-6933776 (1).webp` | 1920×1281 | WEBP | Project: Light Pine Kitchen | Inset hardware craftsmanship |
-| `669a79d0f958996e16feb55d_pexels-heyho-7045991 (1).webp` | 1920×1281 | WEBP | Home, Portfolio | Airy Apartment preview card |
-| `669a74c06c11cb7e8dc5ef67_pexels-heyho-7061399.webp` | 1920×1281 | WEBP | Home, Portfolio | Modern Kitchen preview card |
-| `669a74c38cff10f8c353982f_pexels-heyho-7061393.webp` | 1920×1281 | WEBP | Project: Modern Kitchen | Integrated appliances joinery |
-| `669a74c53733ff7672abac62_pexels-heyho-7061397.webp` | 1920×1281 | WEBP | Project: Modern Kitchen | Fluted wood panelling |
-| `669a74c922765732f9a96424_pexels-heyho-7061400.webp` | 1920×1281 | WEBP | Project: Modern Kitchen | Recessed under-cabinet lighting |
-| `669a74cb5182009a6624676d_pexels-heyho-7061421.webp` | 1920×1281 | WEBP | Project: Modern Kitchen | Minimalist handleless drawer |
-| `669a7a6536701b5353ed9a15_pexels-heyho-8134762 (1).webp` | 1920×1313 | WEBP | Home, Portfolio | Hamptons Manor House preview card |
-| `669a7a679b12a50aa126791c_pexels-heyho-8134763 (1).webp` | 1920×1281 | WEBP | Project: Hamptons Manor | Heritage architectural library |
-| `669a7a6915896f240c3cc90d_pexels-heyho-8134773 (1).webp` | 1920×1281 | WEBP | Project: Hamptons Manor | Grand staircase banister detail |
-| `669a7a6ca3e55076d5213852_pexels-heyho-8134760 (1).webp` | 1920×1281 | WEBP | Project: Hamptons Manor | Coffered ceiling beams |
-| `669a7a6fcbd7c11cea0e9b3e_pexels-heyho-8134755 (1).webp` | 1920×1239 | WEBP | Project: Hamptons Manor | Fireplace surround mantle |
-| `669a7adffc5f1a0e36efef82_pexels-heyho-6908563 (1).webp` | 1920×1280 | WEBP | Home, Portfolio | Dark Oak Kitchen preview card |
-| `669a7afddf6c8dd4e656d953_pexels-heyho-6908555 (1).webp` | 1920×1281 | WEBP | Project: Dark Oak Kitchen | Smoked oak tall units |
-| `669a7b007d8e8cf5a626d2c7_pexels-heyho-6908565 (1).webp` | 1920×1280 | WEBP | Project: Dark Oak Kitchen | Dark wood dining junction |
-| `669a7b05ce50084b9d82a3b1_pexels-heyho-6908567 (1).webp` | 1920×1281 | WEBP | Project: Dark Oak Kitchen | Matte black & oak counter |
-| `669a7b0c31856485502d31f4_pexels-heyho-6908569 (1).webp` | 1920×1444 | WEBP | Project: Dark Oak Kitchen | Custom wine rack joinery |
+| `669a78fadc1f1a2934f63720_pexels-heyho-6933857 (1).webp` | 1920×1314 | WEBP | Home, Portfolio | Corporate Boardroom & Conference Suites preview card |
+| `669a78fdd29c1ac1e669b14c_pexels-heyho-6933861 (1).webp` | 1920×1281 | WEBP | Project: Corporate Boardroom & Conference Suites | Boardroom credenza full view |
+| `669a78ffbc9370c4a80979fe_pexels-heyho-6933859 (1).webp` | 1920×1281 | WEBP | Project: Corporate Boardroom & Conference Suites | Built-in shelving detail |
+| `669a7901fb10c5774c664444_pexels-heyho-6933853 (1).webp` | 1920×1281 | WEBP | Project: Corporate Boardroom & Conference Suites | Conference suite feature island |
+| `669a790468fdc286c106c8b3_pexels-heyho-6933776 (1).webp` | 1920×1281 | WEBP | Project: Corporate Boardroom & Conference Suites | Inset hardware craftsmanship |
+| `669a79d0f958996e16feb55d_pexels-heyho-7045991 (1).webp` | 1920×1281 | WEBP | Home, Portfolio | Acoustic Panelling & Demountable Partitions preview card |
+| `669a74c06c11cb7e8dc5ef67_pexels-heyho-7061399.webp` | 1920×1281 | WEBP | Home, Portfolio | Reception Lobby & Brand Displays preview card |
+| `669a74c38cff10f8c353982f_pexels-heyho-7061393.webp` | 1920×1281 | WEBP | Project: Reception Lobby & Brand Displays | Integrated appliances joinery |
+| `669a74c53733ff7672abac62_pexels-heyho-7061397.webp` | 1920×1281 | WEBP | Project: Reception Lobby & Brand Displays | Fluted wood panelling |
+| `669a74c922765732f9a96424_pexels-heyho-7061400.webp` | 1920×1281 | WEBP | Project: Reception Lobby & Brand Displays | Recessed under-cabinet lighting |
+| `669a74cb5182009a6624676d_pexels-heyho-7061421.webp` | 1920×1281 | WEBP | Project: Reception Lobby & Brand Displays | Minimalist handleless drawer |
+| `669a7a6536701b5353ed9a15_pexels-heyho-8134762 (1).webp` | 1920×1313 | WEBP | Home, Portfolio | Executive Director Cabins & Veneer Joinery preview card |
+| `669a7a679b12a50aa126791c_pexels-heyho-8134763 (1).webp` | 1920×1281 | WEBP | Project: Executive Director Cabins | Heritage architectural library |
+| `669a7a6915896f240c3cc90d_pexels-heyho-8134773 (1).webp` | 1920×1281 | WEBP | Project: Executive Director Cabins | Grand staircase banister detail |
+| `669a7a6ca3e55076d5213852_pexels-heyho-8134760 (1).webp` | 1920×1281 | WEBP | Project: Executive Director Cabins | Coffered ceiling beams |
+| `669a7a6fcbd7c11cea0e9b3e_pexels-heyho-8134755 (1).webp` | 1920×1239 | WEBP | Project: Executive Director Cabins | Fireplace surround mantle |
+| `669a7adffc5f1a0e36efef82_pexels-heyho-6908563 (1).webp` | 1920×1280 | WEBP | Home, Portfolio | Modular Workstation Deployment preview card |
+| `669a7afddf6c8dd4e656d953_pexels-heyho-6908555 (1).webp` | 1920×1281 | WEBP | Project: Modular Workstation Deployment | Modular storage tall units |
+| `669a7b007d8e8cf5a626d2c7_pexels-heyho-6908565 (1).webp` | 1920×1280 | WEBP | Project: Modular Workstation Deployment | Dark wood dining junction |
+| `669a7b05ce50084b9d82a3b1_pexels-heyho-6908567 (1).webp` | 1920×1281 | WEBP | Project: Modular Workstation Deployment | Modular workstation counter |
+| `669a7b0c31856485502d31f4_pexels-heyho-6908569 (1).webp` | 1920×1444 | WEBP | Project: Modular Workstation Deployment | Custom wine rack joinery |
 
 ---
 
@@ -149,6 +147,6 @@ To expand beyond the 4 original abstract icons, an additional suite of **8 custo
 | `669e3093159bbb7ce8acf6d8_pexels-heyho-6284234 (1) (1).webp` | 1920×2880 | WEBP | Contact Page | Handcrafted wooden architectural model |
 | `668d51f63e5b3fefc4ff874c_pexels-heyho-6782429.webp` | 1500×2100 | WEBP | Home Page | Vertical wood paneling detail |
 | `6695112d830f10a69f41c132_pexels-heyho-6284231.webp` | 1500×2250 | WEBP | Home Page | Turned baluster and stair railing |
-| `668e65169a3d5cdec7bad2f9_pexels-heyho-6636297.webp` | 1500×2203 | WEBP | Home Page | Architectural wall cladded in oak |
+| `668e65169a3d5cdec7bad2f9_pexels-heyho-6636297.webp` | 1500×2203 | WEBP | Home Page | Architectural wall cladded in timber |
 | `668d51f0dddb6f02eadf2759_pexels-heyho-7031723.webp` | 1500×2084 | WEBP | Home Page | Workshop workbench tools layout |
 | `669e2bfdc58ba40ac89d5524_pexels-heyho-8143944 (1).webp` | 1920×1281 | WEBP | Home Page | Finished bespoke dining space |

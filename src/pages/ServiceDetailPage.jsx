@@ -57,7 +57,7 @@ export default function ServiceDetailPage({ forcedSlug }) {
           </p>
 
           <PrimaryButton to="/contact" variant="darkest">
-            Request Proposal for {service.title}
+            Get a Quote
           </PrimaryButton>
         </div>
       </section>
@@ -116,7 +116,7 @@ export default function ServiceDetailPage({ forcedSlug }) {
                 color: "var(--color--darkest)"
               }}
             >
-              Engineered for commercial rigor and architectural precision
+              {service.subheading || "End-to-end interior execution, from drawings to handover"}
             </h2>
           </div>
 
@@ -131,7 +131,57 @@ export default function ServiceDetailPage({ forcedSlug }) {
         </div>
       </section>
 
-      {/* 4. GALLERY SHOWCASE */}
+      {/* 4. CAPABILITIES SHOWCASE */}
+      {service.capabilities && (
+        <section style={{ padding: "4rem 4rem" }}>
+          <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
+            <div style={{ marginBottom: "2.5rem" }}>
+              <h3
+                style={{
+                  fontFamily: "var(--font--heading-font)",
+                  fontSize: "1.5rem",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                  margin: 0
+                }}
+              >
+                Core Capabilities
+              </h3>
+            </div>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+                gap: "2rem"
+              }}
+            >
+              {service.capabilities.map((cap) => (
+                <div
+                  key={cap.num}
+                  style={{
+                    backgroundColor: "var(--color--lightest, #f4e6d5)",
+                    border: "1px solid var(--color--light, #eed5b9)",
+                    borderRadius: "var(--spacing--xs, 0.75rem)",
+                    padding: "2rem"
+                  }}
+                >
+                  <div style={{ fontSize: "0.875rem", fontWeight: 700, color: "var(--color--accent, #e1af87)", marginBottom: "0.5rem" }}>
+                    {cap.num}
+                  </div>
+                  <h4 style={{ fontFamily: "var(--font--heading-font)", fontSize: "1.25rem", margin: "0 0 0.5rem", color: "var(--color--darkest)" }}>
+                    {cap.title}
+                  </h4>
+                  <p style={{ margin: 0, fontSize: "0.9375rem", lineHeight: "1.6", color: "var(--color--darkest)" }}>
+                    {cap.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 5. GALLERY SHOWCASE */}
       <section style={{ padding: "4rem 4rem" }}>
         <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
           <div style={{ marginBottom: "2.5rem" }}>
@@ -178,13 +228,13 @@ export default function ServiceDetailPage({ forcedSlug }) {
         </div>
       </section>
 
-      {/* 5. FAQ ACCORDION */}
-      <FaqAccordion title={`Frequently Asked Questions on ${service.title}`} />
+      {/* 6. FAQ ACCORDION */}
+      <FaqAccordion title="FAQs" />
 
-      {/* 6. CTA BANNER */}
+      {/* 7. CTA BANNER */}
       <CtaBanner
-        title={`Partner With Us for ${service.title}`}
-        subtitle="Submit your Bill of Quantities (BOQ), tender drawings, or project specification packages for an immediate execution proposal and delivery schedule."
+        title="Start Your Next Fit-Out"
+        subtitle="Planning a commercial project? Share your drawings or BOQ."
         buttonText="Get a Quote"
       />
     </main>

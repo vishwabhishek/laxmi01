@@ -2,8 +2,8 @@ import React from "react";
 import PrimaryButton from "./PrimaryButton";
 
 export default function CtaBanner({
-  title = "Partner With Us on Your Next Turnkey Fit-Out Project",
-  subtitle = "Share your Bill of Quantities (BOQ), tender drawings, or project specification packages for a comprehensive execution proposal and project delivery schedule.",
+  title = "Start Your Next Fit-Out",
+  subtitle = "Planning a commercial project? Share your drawings or BOQ.",
   buttonText = "Get a Quote",
   buttonLink = "/contact"
 }) {

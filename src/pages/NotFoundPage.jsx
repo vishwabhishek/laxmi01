@@ -35,24 +35,39 @@ export default function NotFoundPage() {
         >
           Error
         </div>
-        <h1
+        <h3
           style={{
             fontFamily: "var(--font--heading-font)",
             fontSize: "clamp(3rem, 6vw, 4.5rem)",
-            margin: "0 0 1rem",
+            margin: "0 0 0.5rem",
             textTransform: "uppercase",
             letterSpacing: "0.04em",
             color: "var(--color--darkest)"
           }}
         >
           Error 404
-        </h1>
+        </h3>
+        <h4
+          style={{
+            fontFamily: "var(--font--heading-font)",
+            fontSize: "1.5rem",
+            margin: "0 0 1rem",
+            color: "var(--color--darkest)"
+          }}
+        >
+          Page not found.
+        </h4>
         <p style={{ fontSize: "1.125rem", lineHeight: "1.7", color: "var(--color--darkest)", margin: "0 0 2.5rem" }}>
-          We're sorry, the page you are looking for does not exist or is no longer available.
+          This page doesn't exist or has moved.
         </p>
-        <PrimaryButton to="/" variant="darkest" style={{ padding: "0.875rem 2.25rem" }}>
-          Return to Home
-        </PrimaryButton>
+        <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
+          <PrimaryButton to="/" variant="darkest" style={{ padding: "0.875rem 2.25rem" }}>
+            Return Home
+          </PrimaryButton>
+          <PrimaryButton to="/contact" variant="darkest" style={{ padding: "0.875rem 2.25rem" }}>
+            Get a Quote
+          </PrimaryButton>
+        </div>
       </div>
     </main>
   );
