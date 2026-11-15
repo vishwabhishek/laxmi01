@@ -207,7 +207,7 @@ export default function PortfolioPage() {
       <CtaBanner
         title="Share your tender or BOQ for project estimation"
         subtitle="Send us your drawing sets, tender schedules, or joinery elevations for rapid feasibility study and item-rate pricing."
-        buttonText="Submit BOQ / Contact Us"
+        buttonText="Get a Quote"
       />
     </main>
   );

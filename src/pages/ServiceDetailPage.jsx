@@ -184,8 +184,8 @@ export default function ServiceDetailPage({ forcedSlug }) {
       {/* 6. CTA BANNER */}
       <CtaBanner
         title={`Partner With Us for ${service.title}`}
-        subtitle="Submit your Bill of Quantities (BOQ), tender drawings, or project specification packages for an immediate execution estimate and mobilization schedule."
-        buttonText="Submit BOQ / Request Tender Proposal"
+        subtitle="Submit your Bill of Quantities (BOQ), tender drawings, or project specification packages for an immediate execution proposal and delivery schedule."
+        buttonText="Get a Quote"
       />
     </main>
   );

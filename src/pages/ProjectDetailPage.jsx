@@ -331,8 +331,8 @@ export default function ProjectDetailPage({ forcedSlug }) {
       {/* 5. CTA BANNER */}
       <CtaBanner
         title="Planning a Similar Commercial Fit-Out?"
-        subtitle="Submit your tender package, architectural shop drawings, or Bill of Quantities (BOQ) for an immediate execution proposal and mobilization estimate."
-        buttonText="Submit BOQ / Request Tender Proposal"
+        subtitle="Submit your tender package, architectural shop drawings, or Bill of Quantities (BOQ) for an immediate execution proposal and project quotation."
+        buttonText="Get a Quote"
       />
     </main>
   );

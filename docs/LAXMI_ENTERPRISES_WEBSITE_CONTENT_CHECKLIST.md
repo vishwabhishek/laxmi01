@@ -90,7 +90,7 @@ Please confirm or replace the 4 key strengths of Laxmi Enterprises:
    * Brief 1-line description: `[________________________________________]`
 3. **Pillar 3:** `[Recommended: Skilled Trade Supervision — Father's hands-on site management]`
    * Brief 1-line description: `[________________________________________]`
-4. **Pillar 4:** `[Recommended: Scalable Workforce Mobilisation — 16 to 30+ deployable carpenters]`
+4. **Pillar 4:** `[Recommended: Scalable Workforce Deployment — 16 to 30+ deployable carpenters]`
    * Brief 1-line description: `[________________________________________]`
 
 ---
@@ -196,8 +196,8 @@ Please confirm or replace the 4 key strengths of Laxmi Enterprises:
 Please confirm or tailor these 4 execution steps:
 * **Step 01: Drawing & BOQ Study**
   * *Description:* `[e.g., We review architectural CAD drawings, BOQ item lines, finish schedules, and site conditions.]`
-* **Step 02: Site Survey & Material Mobilisation**
-  * *Description:* `[e.g., Physical site measurement verification, coordination with main contractors, and workforce mobilization.]`
+* **Step 02: Site Survey & Material Verification**
+  * *Description:* `[e.g., Physical site measurement verification, coordination with main contractors, and workforce deployment.]`
 * **Step 03: Precision Execution & On-Site Supervision**
   * *Description:* `[e.g., Active supervision of carpentry, assembly, laminate pressing, and hardware installation under strict safety standards.]`
 * **Step 04: Snag Clearing & Timely Handover**
@@ -291,9 +291,9 @@ Please confirm what numbers you want displayed:
 1. **Q: Do you undertake labor-only contracts or turnkey material execution?**
    * *Answer:* `[We undertake both models: labor-only execution where the client supplies the materials/hardware, as well as complete execution where we procure specified commercial-grade plywood, laminates, veneers, and fittings as per BOQ.]`
 2. **Q: Does Laxmi Enterprises execute projects outside Mumbai?**
-   * *Answer:* `[Yes. For projects meeting our minimum mobilization threshold (typically ₹10–25 Lakhs+), we deploy experienced supervisory teams and skilled craftsmen pan-India.]`
-3. **Q: How quickly can you mobilize manpower on site?**
-   * *Answer:* `[Depending on project scope and location, we can mobilize a core team of 8 to 20+ skilled carpenters within 3 to 7 working days upon contract signing and site readiness.]`
+   * *Answer:* `[Yes. For projects meeting our minimum project threshold (typically ₹10–25 Lakhs+), we deploy experienced supervisory teams and skilled craftsmen pan-India.]`
+3. **Q: How quickly can you deploy manpower on site?**
+   * *Answer:* `[Depending on project scope and location, we can deploy a core team of 8 to 20+ skilled carpenters within 3 to 7 working days upon contract signing and site readiness.]`
 4. **Q: How is project quality and daily progress monitored?**
    * *Answer:* `[All projects are supervised directly by our senior leadership with daily photo/video logs, drawing cross-checks, and milestone progress reporting to the client's project engineer.]`
 5. **Q: How do we initiate a quotation or tender bid?**

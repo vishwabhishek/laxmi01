@@ -3,8 +3,8 @@ import PrimaryButton from "./PrimaryButton";
 
 export default function CtaBanner({
   title = "Partner With Us on Your Next Turnkey Fit-Out Project",
-  subtitle = "Share your Bill of Quantities (BOQ), tender drawings, or project specification packages for a comprehensive execution proposal and mobilization schedule.",
-  buttonText = "Submit BOQ / Request Tender Proposal",
+  subtitle = "Share your Bill of Quantities (BOQ), tender drawings, or project specification packages for a comprehensive execution proposal and project delivery schedule.",
+  buttonText = "Get a Quote",
   buttonLink = "/contact"
 }) {
   return (

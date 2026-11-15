@@ -200,7 +200,7 @@ export const projects = [
     "location": "Mumbai, Maharashtra",
     "date": "Completed Project",
     "summary": "Rapid on-site assembly, wire-management leveling, acoustic privacy screens, and open floor civil handover.",
-    "description": "Mobilized skilled installation teams to unbox, assemble, level, and wire-manage modular linear workstation clusters with blue acoustic divider screens, open workstation counters with returns, and final civil handover across polished marble floor plates with integrated MEP services.",
+    "description": "Deployed skilled installation teams to unbox, assemble, level, and wire-manage modular linear workstation clusters with blue acoustic divider screens, open workstation counters with returns, and final civil handover across polished marble floor plates with integrated MEP services.",
     "heroImage": "/assets/4life/WA0035.webp",
     "gallery": [
       "/assets/4life/WA0035.webp",
@@ -229,8 +229,8 @@ export const faqs = [
     "answer": "Every project is supervised directly on site by our Founder & Principal Supervisor. We maintain a zero-tolerance policy for drawing deviations, conduct pre-execution sample mock-ups, enforce millimeter tolerances (<0.5mm on edge-banding/joinery), and strictly mandate Environment, Health & Safety (EHS) PPE protocols."
   },
   {
-    "question": "What is your project mobilization timeline and crew scalability across India?",
-    "answer": "With our operational base in Mumbai and active pan-India deployment capability, our core supervisory team and 16 to 30+ verified trade-certified carpenters can mobilize to site within 3 to 7 working days. We scale rapidly to 50–100+ craftsmen to meet compressed milestone schedules."
+    "question": "What is your project turnaround timeline and crew scalability across India?",
+    "answer": "With our operational base in Mumbai and active pan-India deployment capability, our core supervisory team and 16 to 30+ verified trade-certified carpenters can deploy to site within 3 to 7 working days. We scale rapidly to 50–100+ craftsmen to meet compressed milestone schedules."
   }
 ];
 

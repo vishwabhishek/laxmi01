@@ -44,10 +44,10 @@ export default function ContactPage() {
                   color: "var(--color--darkest)"
                 }}
               >
-                Request a Tender Proposal or Project Mobilization Estimate
+                Request a Tender Proposal or Detailed Execution Quote
               </h1>
               <p style={{ fontSize: "1.125rem", lineHeight: "1.75", color: "var(--color--darkest)", margin: "0 0 3rem" }}>
-                We welcome invitations to tender, BOQ packages, architectural shop drawings, and commercial contractor partnerships. Connect with our estimation and project delivery team to schedule a site survey or discuss project mobilization timelines.
+                We welcome invitations to tender, BOQ packages, architectural shop drawings, and commercial contractor partnerships. Connect with our estimation and project delivery team to schedule a site survey or discuss project execution timelines.
               </p>
 
               {/* Direct Details List */}

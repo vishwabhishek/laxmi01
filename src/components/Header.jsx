@@ -99,6 +99,15 @@ export default function Header() {
             >
               Services
             </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                `header-nav-link ${isActive ? "w--current active" : ""}`
+              }
+              style={{ textDecoration: "none", fontSize: "0.9375rem" }}
+            >
+              Contact
+            </NavLink>
           </nav>
 
           {/* Social Icons & Desktop CTA */}
@@ -143,7 +152,7 @@ export default function Header() {
             </div>
 
             <PrimaryButton to="/contact" variant="darkest" style={{ padding: "0.625rem 1.25rem", borderRadius: "0.5rem" }}>
-              Submit BOQ / Tender
+              Get a Quote
             </PrimaryButton>
 
             {/* Mobile Hamburger Button */}
@@ -230,6 +239,14 @@ export default function Header() {
           >
             Services
           </NavLink>
+          <NavLink
+            to="/contact"
+            onClick={() => setIsOpen(false)}
+            className="header-nav-link"
+            style={{ textDecoration: "none", fontSize: "1.125rem", padding: "0.5rem 0" }}
+          >
+            Contact
+          </NavLink>
           <div style={{ paddingTop: "0.5rem" }}>
             <PrimaryButton
               to="/contact"
@@ -237,7 +254,7 @@ export default function Header() {
               onClick={() => setIsOpen(false)}
               style={{ width: "100%", justifyContent: "center" }}
             >
-              Submit BOQ / Tender
+              Get a Quote
             </PrimaryButton>
           </div>
         </div>

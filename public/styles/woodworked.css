@@ -6168,3 +6168,82 @@ figcaption {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
 }
+
+
+/* 2-Row Sequential Timeline: 01 & 02 on Top, Line in Middle, 03 & 04 on Bottom */
+.text-layout-four-main-content.sequential-process {
+  grid-column-gap: 0px !important;
+  grid-row-gap: 0px !important;
+  flex-flow: column !important;
+  grid-template-rows: auto 2px auto !important;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr !important;
+  grid-auto-columns: 1fr !important;
+  justify-content: flex-start !important;
+  align-items: stretch !important;
+  display: grid !important;
+}
+
+.text-layout-four-main-content.sequential-process .text-layout-four-content-wrapper.step-01 {
+  grid-column: 2 / 4 !important;
+  grid-row: 1 / 2 !important;
+}
+
+.text-layout-four-main-content.sequential-process .text-layout-four-content-wrapper.step-02 {
+  grid-column: 5 / 7 !important;
+  grid-row: 1 / 2 !important;
+}
+
+.text-layout-four-main-content.sequential-process .text-layout-four-divider-line {
+  grid-column: 1 / -1 !important;
+  grid-row: 2 / 3 !important;
+  width: 100% !important;
+  height: 2px !important;
+  background-color: var(--color--dark) !important;
+  position: relative !important;
+  margin: 0 !important;
+}
+
+.text-layout-four-main-content.sequential-process .text-layout-four-content-wrapper.step-03 {
+  grid-column: 1 / 3 !important;
+  grid-row: 3 / 4 !important;
+}
+
+.text-layout-four-main-content.sequential-process .text-layout-four-content-wrapper.step-04 {
+  grid-column: 4 / 6 !important;
+  grid-row: 3 / 4 !important;
+}
+
+.text-layout-four-main-content.sequential-process .text-layout-four-content-wrapper {
+  border-left: 1px dashed var(--color--dark) !important;
+  padding-left: var(--spacing--l, 3rem) !important;
+  padding-right: var(--spacing--m, 2rem) !important;
+}
+
+.text-layout-four-main-content.sequential-process .text-layout-four-content-wrapper.upper {
+  padding-top: var(--spacing--xxs, 0.25rem) !important;
+  padding-bottom: var(--spacing--xl, 4.5rem) !important;
+}
+
+.text-layout-four-main-content.sequential-process .text-layout-four-content-wrapper.lower {
+  padding-top: var(--spacing--xl, 4.5rem) !important;
+  padding-bottom: var(--spacing--xxs, 0.25rem) !important;
+}
+
+@media screen and (max-width: 991px) {
+  .text-layout-four-main-content.sequential-process {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto auto auto !important;
+    row-gap: var(--spacing--s, 1.5rem) !important;
+  }
+  .text-layout-four-main-content.sequential-process .text-layout-four-divider-line {
+    display: none !important;
+  }
+  .text-layout-four-main-content.sequential-process .text-layout-four-content-wrapper {
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+    padding-top: var(--spacing--m, 2rem) !important;
+    padding-bottom: var(--spacing--m, 2rem) !important;
+    padding-left: var(--spacing--m, 2rem) !important;
+  }
+}
+

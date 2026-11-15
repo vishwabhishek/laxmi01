@@ -94,7 +94,7 @@ export default function HomePage() {
               </p>
               <div>
                 <PrimaryButton to="/contact" variant="lightest" style={{ padding: "0.875rem 2rem", fontSize: "0.9375rem" }}>
-                  SUBMIT BOQ / REQUEST TENDER PROPOSAL
+                  GET A QUOTE
                 </PrimaryButton>
               </div>
             </div>

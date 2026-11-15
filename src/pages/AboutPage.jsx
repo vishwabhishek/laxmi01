@@ -11,8 +11,8 @@ export default function AboutPage() {
     },
     {
       num: "02",
-      title: "Site Survey & Mobilisation",
-      desc: "Precise laser measurements across site finished levels, wall plumbness, and service conduit clearances, followed by mobilization of verified carpenters and core tooling."
+      title: "Site Survey & Verification",
+      desc: "Precise laser measurements across site finished levels, wall plumbness, and service conduit clearances, followed by deployment of verified carpenters and core tooling."
     },
     {
       num: "03",
@@ -319,8 +319,8 @@ export default function AboutPage() {
       {/* 6. CTA BANNER */}
       <CtaBanner
         title="Ready to partner on your upcoming fit-out project?"
-        subtitle="Submit your tender packages, architectural shop drawings, or Bill of Quantities (BOQ) for an executable estimate and mobilization schedule."
-        buttonText="Submit BOQ / Request Proposal"
+        subtitle="Submit your tender packages, architectural shop drawings, or Bill of Quantities (BOQ) for an comprehensive execution proposal and project delivery schedule."
+        buttonText="Get a Quote"
       />
     </main>
   );
