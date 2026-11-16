@@ -12,7 +12,7 @@ export default function Footer() {
     setCallbackStatus("submitting");
 
     const payload = {
-      access_key: "YOUR_ACCESS_KEY_HERE",
+      access_key: "f4a576d3-6666-4d9b-bf37-5e0163849181",
       subject: "Quick Callback Request — Laxmi Enterprises",
       from_name: "Laxmi Enterprises Website",
       contact_info: callbackContact

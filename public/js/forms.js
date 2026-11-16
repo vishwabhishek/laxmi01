@@ -60,7 +60,7 @@
         })
         .then(function (result) {
           // If successful or if placeholder key is used during staging/dev, transition to success state
-          if (result && (result.success || jsonPayload.access_key === "YOUR_ACCESS_KEY_HERE")) {
+          if (result && (result.success || jsonPayload.access_key === "f4a576d3-6666-4d9b-bf37-5e0163849181")) {
             form.style.display = "none";
             if (successBlock) {
               successBlock.style.display = "block";
