@@ -28,7 +28,7 @@ Fill in the blanks `[____________________]` and answer the questions below. Once
 * **Official Business Name:** Laxmi Enterprises
 * **Primary Phone Number for Inquiries:** `+91 98675 53001`
 * **Secondary / Alternate Phone Number:** `[____________________]`
-* **Official Business Email Address:** `[____________________]` *(e.g. contact@laxmienterprises.in or gmail)*
+* **Official Business Email Address:** `[____________________]` *(e.g. contact@laxmienterprises.co.in or gmail)*
 * **WhatsApp Number for Quick Quotes / BOQ Sharing:** `[____________________]`
 * **Official City & Operating Region:** Mumbai, Maharashtra, India
 * **Public Address / Area to display on Contact Page:** `[____________________]` *(e.g. "Andheri East, Mumbai, Maharashtra 400069" — Note: Do not publish your residential home address)*

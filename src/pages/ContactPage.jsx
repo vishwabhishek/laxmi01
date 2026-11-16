@@ -91,7 +91,7 @@ export default function ContactPage() {
                     Tender &amp; Procurement Desk
                   </div>
                   <div style={{ fontFamily: "var(--font--heading-font)", fontSize: "1.25rem", fontWeight: 600, color: "var(--color--darkest)" }}>
-                    contact@laxmienterprises.in
+                    <a href="mailto:contact@laxmienterprises.co.in" style={{ color: "inherit", textDecoration: "none" }}>contact@laxmienterprises.co.in</a>
                   </div>
                 </div>
 
