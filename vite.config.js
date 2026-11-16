@@ -62,8 +62,19 @@ function cleanUrlsPlugin() {
             const directHtml = path.join(__dirname, clean + '.html');
             if (fs.existsSync(htmlPath)) {
               req.url = clean + '/index.html' + (req.url.includes('?') ? '?' + req.url.split('?')[1] : '');
+              next();
+              return;
             } else if (fs.existsSync(directHtml)) {
               req.url = clean + '.html' + (req.url.includes('?') ? '?' + req.url.split('?')[1] : '');
+              next();
+              return;
+            } else {
+              const notFoundHtml = path.join(__dirname, '404.html');
+              if (fs.existsSync(notFoundHtml)) {
+                res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
+                res.end(fs.readFileSync(notFoundHtml));
+                return;
+              }
             }
           }
         }
@@ -83,8 +94,19 @@ function cleanUrlsPlugin() {
             const directHtml = path.join(__dirname, 'dist', clean + '.html');
             if (fs.existsSync(htmlPath)) {
               req.url = clean + '/index.html' + (req.url.includes('?') ? '?' + req.url.split('?')[1] : '');
+              next();
+              return;
             } else if (fs.existsSync(directHtml)) {
               req.url = clean + '.html' + (req.url.includes('?') ? '?' + req.url.split('?')[1] : '');
+              next();
+              return;
+            } else {
+              const notFoundHtml = path.join(__dirname, 'dist', '404.html');
+              if (fs.existsSync(notFoundHtml)) {
+                res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
+                res.end(fs.readFileSync(notFoundHtml));
+                return;
+              }
             }
           }
         }
