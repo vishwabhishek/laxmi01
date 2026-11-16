@@ -82,7 +82,7 @@ export default function ContactPage() {
                     Direct Telephone
                   </div>
                   <div style={{ fontFamily: "var(--font--heading-font)", fontSize: "1.25rem", fontWeight: 600, color: "var(--color--darkest)" }}>
-                    +91 98XXX XXXXX
+                    <a href="tel:+919867553001" style={{ color: "inherit", textDecoration: "none" }}>+91 98675 53001</a>
                   </div>
                 </div>
 

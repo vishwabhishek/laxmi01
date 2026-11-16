@@ -26,7 +26,7 @@ Fill in the blanks `[____________________]` and answer the questions below. Once
 *(Currently displayed as generic placeholders like `info@woodworked.co`, `(+00)-1234-209-304`, and `123 Road Street, Townsville`)*
 
 * **Official Business Name:** Laxmi Enterprises
-* **Primary Phone Number for Inquiries:** `[____________________]` *(e.g. +91 98XXXXXXXX)*
+* **Primary Phone Number for Inquiries:** `+91 98675 53001`
 * **Secondary / Alternate Phone Number:** `[____________________]`
 * **Official Business Email Address:** `[____________________]` *(e.g. contact@laxmienterprises.in or gmail)*
 * **WhatsApp Number for Quick Quotes / BOQ Sharing:** `[____________________]`
