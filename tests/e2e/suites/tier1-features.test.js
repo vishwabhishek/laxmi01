@@ -277,7 +277,7 @@ describe('Tier 1: Feature Coverage (Features 1–25)', () => {
         const faqs = getFaqs(html);
         const q4 = faqs.items.find(item => item.q.includes('Is the work supervised on site?'));
         assert.ok(q4, `Page ${pagePath} must contain Q4 on site supervision`);
-        assert.ok(q4.a.includes('founder supervises site operations daily'), `Page ${pagePath} Q4 must confirm daily founder supervision`);
+        assert.ok(q4.a.includes('supervisors oversee site operations') && q4.a.includes('specialists are also directly involved'), `Page ${pagePath} Q4 must confirm daily supervisor oversight and specialist involvement`);
       }
     });
   });

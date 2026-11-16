@@ -44,7 +44,7 @@ export const STANDARDIZED_FAQS = [
   },
   {
     q: 'Is the work supervised on site?',
-    a: 'Yes. Our founder supervises site operations daily, against shop drawings, quality checklists and safety standards, through to joint snag handover.'
+    a: 'Yes. Dedicated trade supervisors oversee site operations daily against shop drawings, quality checklists and safety standards. In critical conditions, our senior specialists are also directly involved through to joint snag handover.'
   }
 ];
 

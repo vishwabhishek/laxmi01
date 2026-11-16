@@ -184,7 +184,7 @@ describe('Tier 4: Real-World Application Scenarios (Journeys 1–6)', () => {
 
     const supervisionFaq = faqs.items.find(item => item.q.includes('supervised on site'));
     assert.ok(supervisionFaq, 'Must find on-site supervision FAQ');
-    assert.ok(supervisionFaq.a.includes('founder supervises site operations daily'));
+    assert.ok(supervisionFaq.a.includes('supervisors oversee site operations') && supervisionFaq.a.includes('specialists are also directly involved'));
 
     // Step 5: Clicks Contact Us to submit tender
     const contactRes = await defaultClient.get('/contact');
