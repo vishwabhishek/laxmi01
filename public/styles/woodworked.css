@@ -3553,6 +3553,8 @@ figcaption {
   font-size: .75rem;
   font-weight: 600;
   line-height: 1.5em;
+  white-space: nowrap;
+  cursor: pointer;
   transition: color .4s cubic-bezier(.645, .045, .355, 1), background-color .4s cubic-bezier(.645, .045, .355, 1);
 }
 
@@ -4780,6 +4782,8 @@ figcaption {
   position: relative;
   top: -8rem;
   overflow: hidden;
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .password-label {

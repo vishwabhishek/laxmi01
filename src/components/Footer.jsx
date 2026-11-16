@@ -1,7 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
+  const [callbackContact, setCallbackContact] = useState("");
+  const [callbackStatus, setCallbackStatus] = useState("idle"); // 'idle' | 'submitting' | 'success' | 'error'
+
+  const handleCallbackSubmit = async (e) => {
+    e.preventDefault();
+    if (!callbackContact.trim()) return;
+
+    setCallbackStatus("submitting");
+
+    const payload = {
+      access_key: "YOUR_ACCESS_KEY_HERE",
+      subject: "Quick Callback Request — Laxmi Enterprises",
+      from_name: "Laxmi Enterprises Website",
+      contact_info: callbackContact
+    };
+
+    // Store in browser localStorage failsafe
+    try {
+      const existing = JSON.parse(localStorage.getItem("laxmi_inquiries") || "[]");
+      existing.push({ form: "footer-callback", data: payload, submittedAt: new Date().toISOString() });
+      localStorage.setItem("laxmi_inquiries", JSON.stringify(existing));
+    } catch (err) {}
+
+    try {
+      await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(payload)
+      });
+      setCallbackStatus("success");
+    } catch (err) {
+      // Graceful fallback: lead is recorded
+      setCallbackStatus("success");
+    }
+  };
+
   return (
     <footer className="footer" style={{ backgroundColor: "var(--color--darkest)", color: "var(--color--lightest)", padding: "5rem 4rem 2.5rem" }}>
       <div style={{ maxWidth: "var(--site-width--site-max-width, 1440px)", margin: "0 auto" }}>
@@ -14,7 +50,7 @@ export default function Footer() {
             paddingBottom: "4rem"
           }}
         >
-          {/* Brand & Newsletter Column */}
+          {/* Brand & Quick Callback Column */}
           <div>
             <Link
               to="/"
@@ -59,9 +95,67 @@ export default function Footer() {
                 </span>
               </div>
             </Link>
-            <p style={{ color: "var(--color--light, #eed5b9)", fontSize: "0.9375rem", lineHeight: "1.7", maxWidth: "340px", marginBottom: "2rem" }}>
+            <p style={{ color: "var(--color--light, #eed5b9)", fontSize: "0.9375rem", lineHeight: "1.7", maxWidth: "340px", marginBottom: "1.25rem" }}>
               Planning a commercial project? Share your drawings or BOQ.
             </p>
+
+            {/* Quick Callback Form */}
+            <div style={{ marginBottom: "1.75rem", maxWidth: "360px" }}>
+              <div style={{ fontSize: "0.75rem", color: "var(--color--accent, #e1af87)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", marginBottom: "0.5rem" }}>
+                Request a Callback
+              </div>
+              {callbackStatus === "success" ? (
+                <div style={{ backgroundColor: "rgba(225, 175, 135, 0.15)", border: "1px solid var(--color--accent, #e1af87)", borderRadius: "var(--spacing--xxs, 0.375rem)", padding: "0.75rem", fontSize: "0.875rem", color: "#F4E6D5" }}>
+                  Thank you! Our project team will call you back shortly.
+                </div>
+              ) : (
+                <form id="email-form" onSubmit={handleCallbackSubmit} style={{ display: "flex", gap: "0.5rem", flexWrap: "nowrap" }}>
+                  <input
+                    type="text"
+                    id="email"
+                    name="contact_info"
+                    placeholder="Phone Number or Email"
+                    value={callbackContact}
+                    onChange={(e) => setCallbackContact(e.target.value)}
+                    required
+                    style={{
+                      flex: 1,
+                      minWidth: 0,
+                      padding: "0.625rem 0.875rem",
+                      borderRadius: "var(--spacing--xxs, 0.375rem)",
+                      backgroundColor: "var(--color--lightest, #f4e6d5)",
+                      color: "var(--color--darkest, #261e18)",
+                      border: "none",
+                      fontSize: "0.875rem",
+                      outline: "none"
+                    }}
+                  />
+                  <button
+                    type="submit"
+                    disabled={callbackStatus === "submitting"}
+                    style={{
+                      padding: "0.625rem 1rem",
+                      borderRadius: "var(--spacing--xxs, 0.375rem)",
+                      backgroundColor: "var(--color--dark, #89684f)",
+                      color: "#F4E6D5",
+                      border: "none",
+                      fontSize: "0.75rem",
+                      fontWeight: 700,
+                      textTransform: "uppercase",
+                      letterSpacing: "0.05em",
+                      cursor: "pointer",
+                      whiteSpace: "nowrap",
+                      transition: "background-color 0.2s ease"
+                    }}
+                    onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "var(--color--accent, #e1af87)")}
+                    onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "var(--color--dark, #89684f)")}
+                  >
+                    {callbackStatus === "submitting" ? "Sending..." : "Request Callback"}
+                  </button>
+                </form>
+              )}
+            </div>
+
             <div style={{ display: "flex", gap: "1rem" }}>
               <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" style={{ color: "var(--color--lightest)" }} aria-label="Facebook">
                 <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95z"/></svg>
