@@ -58,6 +58,7 @@ This document details the production architecture, CI/CD pipeline, and operation
 - **Build Command:** `npm run build`
 - **Output Directory:** `dist`
 - **Live Production URL:** `https://laxmi-enterprises.pages.dev/`
+- **Custom Domains:** `https://laxmienterprises.co.in` & `https://www.laxmienterprises.co.in`
 
 ---
 
@@ -122,20 +123,23 @@ git push origin main
 
 ---
 
-## 7. Custom Domain & DNS Preservation (Critical)
+## 7. Custom Domain & DNS Status (Active & Verified)
 
-When attaching your custom domain (e.g., `laxmienterprises.in` or `laxmienterprises.co.in`):
+Both the apex domain and the `www` subdomain are successfully attached to Cloudflare Pages:
 
-1. In Cloudflare Pages project settings, click **Custom domains** → **Set up a domain**.
-2. Enter your domain (e.g. `laxmienterprises.in` or `www.laxmienterprises.in`).
-3. Follow the DNS instructions to point the CNAME record to `laxmi-enterprises.pages.dev`.
+| Domain | Type | Status | SSL / TLS | Target |
+| :--- | :--- | :--- | :--- | :--- |
+| **`laxmienterprises.co.in`** | Apex Domain | **Active** | Universal SSL (Cloudflare Edge) | `laxmi-enterprises.pages.dev` |
+| **`www.laxmienterprises.co.in`** | Subdomain | **Active** | Universal SSL (Cloudflare Edge) | `laxmi-enterprises.pages.dev` |
 
-> [!CAUTION]
-> **Email DNS Preservation:**
-> If your domain handles corporate email (Zoho Mail, Google Workspace, etc.):
-> - **DO NOT delete or modify MX records.**
-> - **DO NOT modify TXT records** for SPF (`v=spf1 ...`), DKIM (`zoho._domainkey` / `google._domainkey`), or DMARC (`_dmarc`).
-> - Only configure the `CNAME` for the website `@` or `www` pointing to Cloudflare Pages.
+> [!NOTE]
+> **Email DNS Integrity Maintained:**
+> Existing Zoho Mail records remain 100% untouched and functional on Cloudflare DNS:
+> - **MX Records:** `10 mx.zoho.com`, `20 mx2.zoho.com`, `50 mx3.zoho.com`
+> - **TXT SPF:** `v=spf1 include:zohomail.com include:_spf.nevtan.com ~all`
+> - **Zoho Verification:** `zoho-verification=zb59602475.zmverify.zoho.com`
+>
+> Cloudflare automatically handles CNAME flattening at root (`@`), serving the Pages deployment without conflicting with MX/TXT records.
 
 ---
 
