@@ -53,10 +53,11 @@ This document details the production architecture, CI/CD pipeline, and operation
 - **Production Branch:** `main`
 - **Cloudflare Service:** **Cloudflare Pages** (Native Git Integration)
 - **Cloudflare Project Name:** `laxmi-enterprises`
-- **Framework Preset:** `Vite` (or `None`)
+- **Framework Preset:** `Vite`
 - **Root Directory:** `/`
 - **Build Command:** `npm run build`
 - **Output Directory:** `dist`
+- **Live Production URL:** `https://laxmi-enterprises.pages.dev/`
 
 ---
 
