@@ -1,0 +1,11 @@
+# Laxmi Enterprises - Cloudflare Pages Edge 301 Redirects
+/services/kitchens /services/turnkey-interiors 301
+/services/bathrooms /services/hospitality-healthcare 301
+/services/furniture /services/joinery-furnishings 301
+/services/flooring /services/acoustics-partitions 301
+/services/buildings /services/workstations-facilities 301
+/projects/light-pine-kitchen /projects/boardroom-conference-suites 301
+/projects/airy-apartment /projects/acoustic-panelling-partitions 301
+/projects/modern-kitchen /projects/reception-lobby-displays 301
+/projects/hamptons-manor-house /projects/executive-director-cabins 301
+/projects/dark-oak-kitchen /projects/modular-workstation-deployment 301

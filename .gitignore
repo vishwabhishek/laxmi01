@@ -12,7 +12,10 @@ yarn-error.log*
 
 # Environment & OS files
 .env
+.env.*
 .env.local
+.dev.vars
+.dev.vars.*
 .DS_Store
 Thumbs.db
 
