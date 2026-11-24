@@ -6251,3 +6251,200 @@ figcaption {
   }
 }
 
+/* ==========================================================================
+   AEO & GEO Optimization Components (Semantic, Accessible & Responsive)
+   ========================================================================== */
+
+.aeo-geo-section {
+  padding: 3.5rem 0;
+  border-top: 1px solid rgba(140, 94, 53, 0.15);
+  background: rgba(244, 230, 213, 0.04);
+}
+
+.aeo-question-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .aeo-question-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.aeo-question-card {
+  background: rgba(38, 30, 24, 0.03);
+  border: 1px solid rgba(140, 94, 53, 0.2);
+  border-radius: 8px;
+  padding: 1.75rem;
+  transition: border-color 0.2s ease;
+}
+
+.aeo-question-card:hover {
+  border-color: #B88655;
+}
+
+.aeo-question-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #261E18;
+  margin-bottom: 0.85rem;
+  line-height: 1.35;
+}
+
+.answer-capsule {
+  font-size: 0.975rem;
+  line-height: 1.65;
+  color: #3D352E;
+  margin-bottom: 0;
+}
+
+.answer-capsule strong {
+  color: #261E18;
+  font-weight: 700;
+}
+
+.key-takeaways {
+  background: rgba(184, 134, 85, 0.08);
+  border-left: 4px solid #B88655;
+  border-radius: 0 8px 8px 0;
+  padding: 1.5rem 1.75rem;
+  margin: 2rem 0;
+}
+
+.key-takeaways h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #261E18;
+  margin-bottom: 0.75rem;
+}
+
+.key-takeaways ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style-type: square;
+}
+
+.key-takeaways li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #3D352E;
+  margin-bottom: 0.35rem;
+}
+
+blockquote.executive-quote {
+  position: relative;
+  background: rgba(38, 30, 24, 0.04);
+  border-left: 4px solid #8C5E35;
+  border-radius: 0 8px 8px 0;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #261E18;
+}
+
+blockquote.executive-quote footer,
+blockquote.executive-quote .quote-author {
+  display: block;
+  margin-top: 0.75rem;
+  font-style: normal;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #8C5E35;
+}
+
+.geo-empirical-data {
+  margin: 2.5rem 0;
+  overflow-x: auto;
+}
+
+.geo-empirical-data h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #261E18;
+  margin-bottom: 1rem;
+}
+
+.benchmark-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.925rem;
+  background: #FFFFFF;
+  border: 1px solid rgba(140, 94, 53, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.benchmark-table thead {
+  background: #261E18;
+  color: #F4E6D5;
+}
+
+.benchmark-table th {
+  padding: 0.9rem 1.2rem;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-bottom: 2px solid #8C5E35;
+}
+
+.benchmark-table td {
+  padding: 0.85rem 1.2rem;
+  border-bottom: 1px solid rgba(140, 94, 53, 0.12);
+  color: #3D352E;
+}
+
+.benchmark-table tr:nth-child(even) td {
+  background: rgba(244, 230, 213, 0.12);
+}
+
+.benchmark-table tr:hover td {
+  background: rgba(184, 134, 85, 0.08);
+}
+
+.benchmark-table strong {
+  color: #261E18;
+}
+
+.citations {
+  margin-top: 1.75rem;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(140, 94, 53, 0.2);
+  font-size: 0.825rem;
+  color: #665D54;
+}
+
+.citations h5 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #8C5E35;
+  margin-bottom: 0.5rem;
+}
+
+.citations ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.citations li {
+  margin-bottom: 0.35rem;
+}
+
+.citations a {
+  color: #8C5E35;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.citations a:hover {
+  color: #261E18;
+}
+
+

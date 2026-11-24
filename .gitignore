@@ -19,11 +19,9 @@ yarn-error.log*
 .DS_Store
 Thumbs.db
 
-# Archives & Temp binaries
-*.zip
-*.tar.gz
-*.rar
-*.7z
+# Crawl & SEO audit reports
+sf_crawl*/
+test_crawl/
 
 # IDE & Editor directories
 .vscode/
